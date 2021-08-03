@@ -1,0 +1,72 @@
+@use '~@angular/material' as mat;
+
+@import 'variables/colors';
+@import 'theme';
+
+html, body {
+  height: 100%;
+  background-color: $body-background;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+footer {
+  height: 75px;
+  background-color: $footer-background;
+}
+
+header {
+  height: 75px;
+}
+
+
+.page-wrapper:not(.page-wrapper-mobile) {
+  $side-padding: 3em;
+
+  main {
+    padding: 0 $side-padding $side-padding $side-padding;
+  }
+
+  header, footer {
+    padding: 0 $side-padding;
+  }
+}
+
+a {
+  font-weight: 500;
+  color: $primary-color !important;
+  text-decoration: none;
+
+  &:hover, &:visited, &:active {
+    text-decoration: none;
+  }
+
+  &.light-link {
+    color: white!important;
+  }
+}
+
+
+html body {
+  .accent-color {
+    color: $primary-color !important;
+  }
+
+  .language-title {
+
+    &.active {
+      &:after {
+        background-color: $primary-color !important;
+      }
+
+      color: $primary-color !important;
+    }
+  }
+
+  mat-icon[color=accent] svg {
+    fill: $primary-color;
+  }
+}

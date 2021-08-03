@@ -1,0 +1,16 @@
+{
+  "APP_NAME": "Translator",
+  "ABOUT_PROJECT": {},
+  "FOOTER": {
+  },
+  "HEADER": {
+    "LABEL_SELECT_LANGUAGE": "Select language",
+    "TITLE": "TRANSLATOR"
+  },
+  "PAGES": {
+    "ABOUT": "About project",
+    "PRIVACY": "Privacy policy",
+    "TERMS": "Terms of service"
+  },
+  "TERMS": {}
+}

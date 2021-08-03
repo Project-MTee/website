@@ -1,0 +1,58 @@
+@use '~@angular/material' as mat;
+
+@include mat.core();
+
+$primary: (
+    50 : #e6ebf3,
+    100 : #c1cde2,
+    200 : #98accf,
+    300 : #6f8bbc,
+    400 : #5072ad,
+    500 : #31599f,
+    600 : #2c5197,
+    700 : #25488d,
+    800 : #1f3e83,
+    900 : #132e72,
+    A100 : #a8bdff,
+    A200 : #7597ff,
+    A400 : #4270ff,
+    A700 : #295dff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+$primary-pallete: mat.define-palette($primary, 500);
+
+$accent-pallete: mat.define-palette(mat.$indigo-palette, 500);
+
+$theme: mat.define-light-theme((
+  color: (
+    primary: $primary-pallete,
+    accent: $accent-pallete
+  ))
+);
+
+$primary-color: mat.get-color-from-palette($primary-pallete,500);
+.primary {
+  color: $primary-color;
+}
+
+.primary-bg {
+  background-color: $primary-color;
+  color: mat.get-color-from-palette($primary-pallete, "500-contrast")
+}
+
+@include mat.all-component-themes($theme);
