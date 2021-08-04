@@ -8,8 +8,8 @@ import { ITldTranslateCoreConfig, ITldTranslateFileConfig } from 'tld-translate/
 })
 export class TranslateComponent implements OnInit {
   coreConfig: ITldTranslateCoreConfig = {
-    appId: "TildeMT|Web",
-    clientId: "u-6c2a15a4-a048-46dd-861e-5c70d87313c1",
+    appId: "EEMT|Website",
+    clientId: "u-c0f0199e-989a-4fcf-ae35-5d7c628a267f",
     loadLanguageFilesManually: false,
     appName: "Translator"
   }
