@@ -56,12 +56,14 @@ html body {
   }
 
   .language-title {
+    &:hover:not([disabled]) {
+      color: $primary-color !important;
+    }
 
     &.active {
       &:after {
         background-color: $primary-color !important;
       }
-
       color: $primary-color !important;
     }
   }
