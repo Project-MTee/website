@@ -3,8 +3,8 @@
     <img class="logo" src="assets/logo.svg" [attr.alt]="'HEADER.ALT_LOGO' | translate" />
   </a>
 
-  <div fxFlex fxLayoutAlign="center center" class="primary">
-    <h1>{{'HEADER.TITLE' | translate}}</h1>
+  <div fxFlex fxLayoutAlign="center center" class="primary" >
+    <h1  fxHide.lt-sm>{{'HEADER.TITLE' | translate}}</h1>
   </div>
   <button mat-button [matMenuTriggerFor]="i18nMenu" color="primary"
           #state="matMenuTrigger" [attr.aria-label]="'HEADER.LABEL_SELECT_LANGUAGE' | translate">
