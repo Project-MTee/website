@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ITldTranslateCoreConfig, ITldTranslateFileConfig } from 'tld-translate/lib/modules/tld-common/models';
+import { ITldTranslateCoreConfig, ITldTranslateFileConfig, ITldTranslateTextConfig } from 'tld-translate/lib/modules/tld-common/models';
 
 @Component({
   selector: 'app-translate',
@@ -11,11 +11,15 @@ export class TranslateComponent implements OnInit {
     appId: "TildeMT|Website|EEMT",
     clientId: "u-c0f0199e-989a-4fcf-ae35-5d7c628a267f",
     loadLanguageFilesManually: false,
-    appName: "Translator"
+    appName: "Translator",
+    hideAchievement: true
   }
   fileConfig: ITldTranslateFileConfig = {
     allowedFileTypes: [".docx", ".xls", ".odt", ".tmx", ".pptx", ".txt"],
     allowedFileTypesAuthUser: [".docx", ".xls", ".odt", ".tmx", ".pptx", ".txt"]
+  }
+  textConfig: ITldTranslateTextConfig = {
+    showAvailableExtensions: false
   }
 
   constructor() { }

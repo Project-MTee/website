@@ -64,11 +64,21 @@ html body {
       &:after {
         background-color: $primary-color !important;
       }
+
       color: $primary-color !important;
     }
   }
 
   mat-icon[color=accent] svg {
     fill: $primary-color;
+  }
+
+  .tld-translate-target-wrapper.empty-target-wrapper,
+  .tld-translate-switcher-wrapper, .source-container, .tld-translate-body-wrapper {
+    background-color: white !important;
+  }
+
+  .upload-button, .translate-button{
+      border-radius: 30px!important;
   }
 }

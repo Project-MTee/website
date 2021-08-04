@@ -12,5 +12,8 @@
     "PRIVACY": "Privacy policy",
     "TERMS": "Terms of service"
   },
-  "TERMS": {}
+  "TERMS": {},
+  "TLD_TRANSLATE": {
+    "SOURCE_TOOLTIP": "Enter the text you would like to translate."
+  }
 }
