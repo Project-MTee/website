@@ -45,40 +45,48 @@ a {
   }
 
   &.light-link {
-    color: white!important;
+    color: white !important;
   }
 }
 
-
+.menu-item{
+    font-size:18px;
+}
 html body {
-  .accent-color {
-    color: $primary-color !important;
-  }
+  tld-translate {
+      tld-translate-switcher, tld-translate-switcher button{
+          font-size:18px!important;
 
-  .language-title {
-    &:hover:not([disabled]) {
+      }
+    .accent-color {
       color: $primary-color !important;
     }
 
-    &.active {
-      &:after {
-        background-color: $primary-color !important;
+    .language-title {
+      &:hover:not([disabled]) {
+        color: $primary-color !important;
       }
 
-      color: $primary-color !important;
+      &.active {
+        &:after {
+          background-color: $primary-color !important;
+        }
+
+        color: $primary-color !important;
+      }
     }
-  }
 
-  mat-icon[color=accent] svg {
-    fill: $primary-color;
-  }
+    mat-icon[color=accent] svg {
+      fill: $primary-color;
+    }
 
-  .tld-translate-target-wrapper.empty-target-wrapper,
-  .tld-translate-switcher-wrapper, .source-container, .tld-translate-body-wrapper {
-    background-color: white !important;
-  }
+    .tld-translate-target-wrapper.empty-target-wrapper,
+    .tld-translate-switcher-wrapper, .source-container, .tld-translate-body-wrapper {
+      background-color: white !important;
+    }
 
-  .upload-button, .translate-button{
-      border-radius: 30px!important;
+    .upload-button, .translate-button {
+      border-radius: 30px !important;
+    }
   }
 }

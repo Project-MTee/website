@@ -14,6 +14,7 @@
   },
   "TERMS": {},
   "TLD_TRANSLATE": {
-    "SOURCE_TOOLTIP": "Enter the text you would like to translate."
+    "SOURCE_TOOLTIP": "Enter the text you would like to translate.",
+    "UPLOAD_FILE_BUTTON": "+ Upload or drag a file"
   }
 }
