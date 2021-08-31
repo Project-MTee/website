@@ -21,7 +21,7 @@ COPY . .
 RUN npm run build --prod
 
 RUN jq '\
-  .core.clientId="$PUBLIC_CLIENT_ID" |\
+  .core.clientId="$PUBLIC_CLIENT_ID" '\
   dist/website-mtee/assets/config.local.json > dist/website-mtee/assets/config.local.json.tmp
 RUN mv dist/website-mtee/assets/config.local.json.tmp dist/website-mtee/assets/config.local.json
   
