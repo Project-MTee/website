@@ -1,0 +1,16 @@
+{
+  "core": {
+    "appId": "TildeMT|Website|EEMT",
+    "clientId": "u-c0f0199e-989a-4fcf-ae35-5d7c628a267f",
+    "appName": "Translator",
+    "hideAchievement": true
+  },
+  "text": {
+    "showAvailableExtensions": false
+  },
+  "file": {
+    "allowedFileTypes": [ ".docx", ".xls", ".odt", ".tmx", ".pptx", ".txt" ],
+    "allowedFileTypesAuthUser": [ ".docx", ".xls", ".odt", ".tmx", ".pptx", ".txt" ]
+  },
+  "web": {}
+}

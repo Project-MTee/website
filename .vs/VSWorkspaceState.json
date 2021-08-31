@@ -1,12 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\app",
-    "\\src\\app\\framework",
-    "\\src\\app\\framework\\i18n",
-    "\\src\\assets",
-    "\\src\\assets\\i18n"
+    "\\src"
   ],
+  "SelectedNode": "\\src\\app\\components\\footer\\footer.component.html",
   "PreviewInSolutionExplorer": false
 }

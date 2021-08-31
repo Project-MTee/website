@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -15,6 +15,11 @@ import { AppTranslationsLoader } from './framework/i18n/app-translations.loader'
 import { MaterialModule } from './shared/material.module';
 import { TldTranslateModule } from 'tld-translate';
 import { PagesModule } from './pages/pages.module';
+import { ConfigService } from './shared/services/config.service';
+
+export function loadConfigFactory(config: ConfigService) {
+  return () => config.load().toPromise();
+}
 
 @NgModule({
   declarations: [
@@ -38,7 +43,12 @@ import { PagesModule } from './pages/pages.module';
     PagesModule,
     TldTranslateModule
   ],
-  providers: [],
+  providers: [{
+    provide: APP_INITIALIZER,
+    useFactory: loadConfigFactory,
+    deps: [ConfigService],
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

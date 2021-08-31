@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from '../shared/material.module';
+import { WebTranslateComponent } from './web-translate/web-translate.component';
 
 
 
@@ -19,6 +20,7 @@ import { MaterialModule } from '../shared/material.module';
     TermsComponent,
     PrivacyComponent,
     TranslateComponent,
+    WebTranslateComponent,
   ],
   imports: [
     BrowserModule,

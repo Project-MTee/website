@@ -3,6 +3,8 @@ import { AboutComponent } from './about/about.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { TranslateComponent } from './translate/translate.component';
+import { WebTranslateComponent } from './web-translate/web-translate.component';
+
 
 export const routes: Routes = [
   {
@@ -20,5 +22,9 @@ export const routes: Routes = [
   {
     path: "privacy",
     component: PrivacyComponent
-  }
+  },
+  {
+    path: 'web-translate',
+    component: WebTranslateComponent
+  },
 ];
