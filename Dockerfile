@@ -22,8 +22,8 @@ RUN npm run build --prod
 
 RUN jq '\
   .core.clientId="$PUBLIC_CLIENT_ID" '\
-  dist/website-mtee/assets/config.local.json > dist/website-mtee/assets/config.local.json.tmp
-RUN mv dist/website-mtee/assets/config.local.json.tmp dist/website-mtee/assets/config.local.json
+  dist/website-mtee/assets/config.json > dist/website-mtee/assets/config.json.tmp
+RUN mv dist/website-mtee/assets/config.json.tmp dist/website-mtee/assets/config.json
   
 RUN chmod +x entrypoint.sh
 RUN cp entrypoint.sh dist/website-mtee/
