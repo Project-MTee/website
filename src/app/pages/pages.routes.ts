@@ -3,6 +3,7 @@ import { AboutComponent } from './about/about.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { TranslateComponent } from './translate/translate.component';
+import { WebEmbeddedComponent } from 'tld-translate';
 import { WebTranslateComponent } from './web-translate/web-translate.component';
 
 
@@ -26,5 +27,9 @@ export const routes: Routes = [
   {
     path: 'web-translate',
     component: WebTranslateComponent
+  },
+  {
+    path: 'webtranslate/embedded',
+    component: WebEmbeddedComponent
   },
 ];

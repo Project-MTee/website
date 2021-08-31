@@ -3,14 +3,41 @@
     "appId": "TildeMT|Website|EEMT",
     "clientId": "u-c0f0199e-989a-4fcf-ae35-5d7c628a267f",
     "appName": "Translator",
-    "hideAchievement": true
+    "hideAchievement": true,
+    "sourceLanguageOrder": {
+      "en": [ "en", "lv", "ru", "lt", "et", "fi", "pl", "de", "it", "bg", "hr" ],
+      "lv": [ "en", "lv", "ru", "lt", "et", "fi", "pl", "de", "it", "bg", "hr" ],
+      "lt": [ "en", "lt", "ru", "lv", "et", "fi", "pl", "de", "it", "bg", "hr" ],
+      "et": [ "en", "et", "fi", "ru", "lv", "lt", "pl", "de", "it", "bg", "hr" ],
+      "fi": [ "fi", "en", "et", "ru", "lv", "lt", "pl", "de", "it", "bg", "hr" ],
+      "pl": [ "pl", "en", "de", "lv", "et", "ru", "lt", "fi", "it", "bg", "hr" ],
+      "de": [ "en", "bg", "da", "et", "fi", "fr", "de", "el", "ga", "is", "it", "hr", "lv", "lt", "ru", "mt", "nl", "nb", "pl", "pt", "pt-pt", "ro", "sv", "sk", "sl", "es", "cs", "hu" ]
+    },
+    "targetLanguageOrder": {
+      "en": [ "en", "lv", "ru", "lt", "et", "fi", "ar", "pl", "de", "bg", "hr", "es", "nb", "ro" ],
+      "lv": [ "en", "lv", "lt", "et", "ru", "fi", "ar", "pl", "de", "bg", "hr", "es", "nb", "ro" ],
+      "lt": [ "en", "lt", "lv", "et", "ru", "fi", "ar", "pl", "de", "bg", "hr", "es", "nb", "ro" ],
+      "et": [ "en", "et", "lv", "lt", "ru", "fi", "ar", "pl", "de", "bg", "hr", "es", "nb", "ro" ],
+      "fi": [ "et", "fi", "en", "lv", "lt", "ru", "ar", "pl", "de", "bg", "hr", "es", "nb", "ro" ],
+      "pl": [ "en", "pl", "de", "lv", "ru", "et", "fi", "lt", "ar", "bg", "hr", "es", "nb", "ro" ],
+      "de": [ "de", "en", "fr", "bg", "da", "et", "fi", "el", "ga", "is", "it", "hr", "lv", "lt", "ru", "mt", "nl", "nb", "pl", "pt", "pt-pt", "ro", "sv", "sk", "sl", "es", "cs", "hu", "ar" ]
+    },
+    "translationServiceUrl": "https://www.letsmt.eu/ws/service.svc/json/",
+    "isAuth": true
   },
   "text": {
-    "showAvailableExtensions": false
+    "showAvailableExtensions": false,
+    "webWidgetRedirectUrlPrefix": "",
+    "webWidgetRedirectUrlPosfix": "/web-translate?url=",
+    "autoRedirectToWebTranslate": true
   },
   "file": {
     "allowedFileTypes": [ ".docx", ".xls", ".odt", ".tmx", ".pptx", ".txt" ],
     "allowedFileTypesAuthUser": [ ".docx", ".xls", ".odt", ".tmx", ".pptx", ".txt" ]
   },
-  "web": {}
+  "web": {
+    "webtranslationProxyPath": "TranslateProxy",
+    "websiteTranslationUrl": "/webtranslate/embedded?embeddedStyle=noUI",
+    "debug": false
+  }
 }

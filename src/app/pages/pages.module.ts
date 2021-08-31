@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { AboutComponent } from './about/about.component';
 import { TermsComponent } from './terms/terms.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TranslateComponent } from './translate/translate.component';
-import { TldTranslateModule } from 'tld-translate';
+import { TldTranslateModule, TldWebModule } from 'tld-translate';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -28,7 +27,8 @@ import { WebTranslateComponent } from './web-translate/web-translate.component';
     FlexLayoutModule,
     HttpClientModule,
     MaterialModule,
-    TldTranslateModule
+    TldTranslateModule,
+    TldWebModule
   ]
 })
 export class PagesModule { }

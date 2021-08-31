@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ITldTranslateCoreConfig, ITldTranslateTextConfig, ITldTranslateWebsiteConfig } from 'tld-translate/lib/modules/tld-common/models';
+import { ConfigService } from '../../shared/services/config.service';
 
 @Component({
   selector: 'app-web-translate',
@@ -9,33 +10,14 @@ import { ITldTranslateCoreConfig, ITldTranslateTextConfig, ITldTranslateWebsiteC
 })
 export class WebTranslateComponent implements OnInit {
   coreConfig!: ITldTranslateCoreConfig;
-  textConfig!: ITldTranslateTextConfig;
   webtranslateConfig!: ITldTranslateWebsiteConfig;
 
+  constructor(private readonly config: ConfigService) { }
   ngOnInit(): void {
-    this.initConfig();
+    this.webtranslateConfig = this.config.appConfig.web;
+    this.coreConfig = this.config.appConfig.core;
   }
 
   onError(error: any): void {
-  }
-
-  private initConfig(): void {
-    //const apiSettings = this.config.getSettings('mt.api');
-    //const generalSettings = this.config.getSettings('mt.general');
-    //const coreSettings = this.config.getSettings('mt.core');
-    //const webtranslateSettings = this.config.getSettings('mt.webtranslate');
-
-    //this.coreConfig = { appId: apiSettings.appID, clientId: apiSettings.clientId };
-    //this.coreConfig.isAuth = this.auth.isAuthenticated();
-    //this.coreConfig.jwtAuth = apiSettings.jwtAuth;
-    //this.coreConfig.sourceLanguageOrder = coreSettings.sourceLanguageOrder;
-    //this.coreConfig.targetLanguageOrder = coreSettings.targetLanguageOrder;
-    //this.coreConfig.translationServiceUrl = generalSettings.translationServiceUrl;
-
-    //this.webtranslateConfig = {};
-    //this.webtranslateConfig.debug = false;
-    //this.webtranslateConfig.translatePagePath = webtranslateSettings.webtranslationProxyPath;
-    //this.webtranslateConfig.websiteTranslationUrl = webtranslateSettings.websiteTranslationUrl;
-    //this.webtranslateConfig.logoLocation = webtranslateSettings.logoLocation;
   }
 }
