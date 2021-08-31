@@ -32,8 +32,6 @@ RUN cp entrypoint.sh dist/website-mtee/
 FROM nginx:alpine
 
 COPY --from=release /app/dist/website-mtee /usr/share/nginx/html
-RUN touch /usr/share/nginx/html/assets/tld-translate-web-component/tld-translate.js
-RUN touch /usr/share/nginx/html/assets/tld-translate-web-component/styles.css
 
 ENTRYPOINT [ "/usr/share/nginx/html/entrypoint.sh" ]
 CMD ["nginx", "-g", "daemon off;"]
