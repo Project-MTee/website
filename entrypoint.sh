@@ -3,7 +3,7 @@
 set -e
 
 # Setting default configuration values to unexistant ENV variables
-echo PUBLIC_CLIENT_ID: $PPUBLIC_CLIENT_ID
+echo PUBLIC_CLIENT_ID: $PUBLIC_CLIENT_ID
 
 # Replace configuration values from ENV variables
 envsubst < /usr/share/nginx/html/assets/config.json > /usr/share/nginx/html/assets/config.json.temp
