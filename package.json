@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -24,9 +24,10 @@
     "@mt/core": "^0.1.28",
     "@ngx-translate/core": "^13.0.0",
     "file-saver": "^2.0.5",
+    "jquery": "^3.6.0",
     "ngx-translate-multi-http-loader": "^3.0.0",
-    "rxjs": "~6.6.0",
-    "tld-translate": "~1.0.73",
+    "rxjs": "^6.6.7",
+    "tld-translate": "1.0.90",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
