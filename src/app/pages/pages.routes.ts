@@ -5,24 +5,31 @@ import { TermsComponent } from './terms/terms.component';
 import { TranslateComponent } from './translate/translate.component';
 import { WebEmbeddedComponent } from 'tld-translate';
 import { WebTranslateComponent } from './web-translate/web-translate.component';
+import { MainComponent } from '../layout/main/main.component';
 
 
 export const routes: Routes = [
   {
     path: "",
-    component: TranslateComponent
-  },
-  {
-    path: "about",
-    component: AboutComponent
-  },
-  {
-    path: "terms",
-    component: TermsComponent
-  },
-  {
-    path: "privacy",
-    component: PrivacyComponent
+    component: MainComponent,
+    children: [
+      {
+        path: "",
+        component: TranslateComponent
+      },
+      {
+        path: "about",
+        component: AboutComponent
+      },
+      {
+        path: "terms",
+        component: TermsComponent
+      },
+      {
+        path: "privacy",
+        component: PrivacyComponent
+      }
+    ]
   },
   {
     path: 'web-translate',
@@ -31,5 +38,5 @@ export const routes: Routes = [
   {
     path: 'webtranslate/embedded',
     component: WebEmbeddedComponent
-  },
+  }
 ];

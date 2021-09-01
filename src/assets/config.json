@@ -36,8 +36,9 @@
     "allowedFileTypesAuthUser": [ ".docx", ".xls", ".odt", ".tmx", ".pptx", ".txt" ]
   },
   "web": {
-    "webtranslationProxyPath": "TranslateProxy",
+    "translatePagePath": "TranslateProxy",
     "websiteTranslationUrl": "/webtranslate/embedded?embeddedStyle=noUI",
-    "debug": false
+    "debug": false,
+    "logoLocation": "assets/logo.svg"
   }
 }

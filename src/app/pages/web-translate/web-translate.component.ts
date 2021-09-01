@@ -16,6 +16,7 @@ export class WebTranslateComponent implements OnInit {
   ngOnInit(): void {
     this.webtranslateConfig = this.config.appConfig.web;
     this.coreConfig = this.config.appConfig.core;
+    console.log(this.config);
   }
 
   onError(error: any): void {
