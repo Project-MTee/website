@@ -2,5 +2,10 @@
   "/TranslateProxy": {
     "target": "https://localhost:44330/",
     "secure": false
+  },
+  "/api":{
+    "target": "https://localhost:44311",
+    "secure": false,
+    "pathRewrite": {"^/api" : ""}
   }
 }
