@@ -13,7 +13,7 @@ import { TranslateLoader } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppTranslationsLoader } from './framework/i18n/app-translations.loader';
 import { MaterialModule } from './shared/material.module';
-import { TldTranslateModule, TldTranslateService } from 'tld-translate';
+import { TldTranslateModule, TldTranslateService, TranslationApiVersion } from 'tld-translate';
 import { PagesModule } from './pages/pages.module';
 import { ConfigService } from './shared/services/config.service';
 import { MainComponent } from './layout/main/main.component';
@@ -48,7 +48,7 @@ export function AppTranslationLoaderFactory(http: HttpClient, tldTranslate: TldT
       }]),
     MaterialModule,
     PagesModule,
-    TldTranslateModule
+    TldTranslateModule.forRoot(TranslationApiVersion.V2)
   ],
   providers: [{
     provide: APP_INITIALIZER,
