@@ -6,6 +6,6 @@
   "/api":{
     "target": "https://localhost:44311",
     "secure": false,
-    "pathRewrite": {"^/api" : ""}
+    "pathRewrite": {"^/api/translate" : ""}
   }
 }
