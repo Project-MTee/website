@@ -3,8 +3,18 @@
     "target": "https://localhost:44330/",
     "secure": false
   },
-  "/api":{
-    "target": "https://localhost:44311",
+  "/api/translate/languageDirection":{
+    "target": "http://localhost:5002",
+    "secure": false,
+    "pathRewrite": {"^/api/translate" : ""} 
+  },
+  "/api/translate/text":{
+    "target": "http://localhost:5003",
+    "secure": false,
+    "pathRewrite": {"^/api/translate" : ""}
+  },
+  "/api/translate/file":{
+    "target": "http://localhost:5001",
     "secure": false,
     "pathRewrite": {"^/api/translate" : ""}
   }
