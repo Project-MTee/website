@@ -1,9 +1,12 @@
-@use '~@angular/material' as mat;
+@use "~@angular/material" as mat;
 
-@import 'variables/colors';
-@import 'theme';
+@import "~tld-translate/src/styles/mixin/tld-translate-accent-colors";
+@import "variables/colors";
+@import "theme";
 
-html, body {
+html,
+body {
+  @include tld-translate-accent-colors($primary-color);
   height: 100%;
   background-color: $body-background;
 }
@@ -22,7 +25,6 @@ header {
   height: 75px;
 }
 
-
 .page-wrapper:not(.page-wrapper-mobile) {
   $side-padding: 3em;
 
@@ -30,7 +32,8 @@ header {
     padding: 0 $side-padding $side-padding $side-padding;
   }
 
-  header, footer {
+  header,
+  footer {
     padding: 0 $side-padding;
   }
 }
@@ -40,7 +43,9 @@ a {
   color: $primary-color !important;
   text-decoration: none;
 
-  &:hover, &:visited, &:active {
+  &:hover,
+  &:visited,
+  &:active {
     text-decoration: none;
   }
 
@@ -49,42 +54,28 @@ a {
   }
 }
 
-.menu-item{
-    font-size:18px;
+.menu-item {
+  font-size: 18px;
 }
 html body {
-      tld-translate-switcher, tld-translate-switcher button{
-          font-size:18px!important;
+  tld-translate-switcher,
+  tld-translate-switcher button {
+    font-size: 18px !important;
+  }
 
-      }
-    .accent-color {
-      color: $primary-color !important;
-    }
+  mat-icon[color="accent"] svg {
+    fill: $primary-color;
+  }
 
-    .language-title {
-      &:hover:not([disabled]) {
-        color: $primary-color !important;
-      }
+  .tld-translate-target-wrapper.empty-target-wrapper,
+  .tld-translate-switcher-wrapper,
+  .source-container,
+  .tld-translate-body-wrapper {
+    background-color: white !important;
+  }
 
-      &.active {
-        &:after {
-          background-color: $primary-color !important;
-        }
-
-        color: $primary-color !important;
-      }
-    }
-
-    mat-icon[color=accent] svg {
-      fill: $primary-color;
-    }
-
-    .tld-translate-target-wrapper.empty-target-wrapper,
-    .tld-translate-switcher-wrapper, .source-container, .tld-translate-body-wrapper {
-      background-color: white !important;
-    }
-
-    .upload-button, .translate-button {
-      border-radius: 30px !important;
-    }
+  .upload-button,
+  .translate-button {
+    border-radius: 30px !important;
+  }
 }

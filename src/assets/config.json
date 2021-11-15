@@ -29,7 +29,11 @@
     "showAvailableExtensions": false,
     "webWidgetRedirectUrlPrefix": "",
     "webWidgetRedirectUrlPosfix": "/web-translate?url=",
-    "autoRedirectToWebTranslate": true
+    "autoRedirectToWebTranslate": true,
+    "highlightType": "grammar",
+    "checkSourceGrammar": true,
+    "grammarCheckLanguages": ["et"],
+    "audioTextInput": true
   },
   "file": {
     "allowedFileTypes": [ ".docx", ".xls", ".odt", ".tmx", ".pptx", ".txt" ],
