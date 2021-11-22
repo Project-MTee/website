@@ -32,6 +32,7 @@ RUN cp entrypoint.sh dist/website-mtee/
 FROM nginx:alpine
 
 COPY --from=release /app/dist/website-mtee /usr/share/nginx/html
+COPY nginx.default.conf /etc/nginx/conf.d/default.conf
 
 ENTRYPOINT [ "/usr/share/nginx/html/entrypoint.sh" ]
 CMD ["nginx", "-g", "daemon off;"]
