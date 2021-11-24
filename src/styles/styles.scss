@@ -1,12 +1,14 @@
 @use "~@angular/material" as mat;
 
 @import "~tld-translate/src/styles/mixin/tld-translate-accent-colors";
+@import "~tld-translate/src/styles/mixin/tld-translate-placeholders";
 @import "variables/colors";
 @import "theme";
 
 html,
 body {
   @include tld-translate-accent-colors($primary-color);
+  @include tld-translate-placeholders($description-text);
   height: 100%;
   background-color: $body-background;
 }
@@ -25,16 +27,18 @@ header {
   height: 75px;
 }
 
-.page-wrapper:not(.page-wrapper-mobile) {
-  $side-padding: 3em;
+.page-wrapper {
+  &:not(.page-wrapper-mobile) {
+    $side-padding: 3em;
 
-  main {
-    padding: 0 $side-padding $side-padding $side-padding;
-  }
+    main {
+      padding: 0 $side-padding $side-padding $side-padding;
+    }
 
-  header,
-  footer {
-    padding: 0 $side-padding;
+    header,
+    footer {
+      padding: 0 $side-padding;
+    }
   }
 }
 

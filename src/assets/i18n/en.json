@@ -5,7 +5,8 @@
   },
   "HEADER": {
     "LABEL_SELECT_LANGUAGE": "Select language",
-    "TITLE": "TRANSLATOR"
+    "TITLE": "TRANSLATOR",
+    "ALT_LOGO": "Logo"
   },
   "PAGES": {
     "ABOUT": "About project",
