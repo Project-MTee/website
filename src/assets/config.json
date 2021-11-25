@@ -23,7 +23,8 @@
       "de": [ "de", "en", "fr", "bg", "da", "et", "fi", "el", "ga", "is", "it", "hr", "lv", "lt", "ru", "mt", "nl", "nb", "pl", "pt", "pt-pt", "ro", "sv", "sk", "sl", "es", "cs", "hu", "ar" ]
     },
     "translationServiceUrl": "https://www.letsmt.eu/ws/service.svc/json/",
-    "isAuth": true
+    "isAuth": true,
+    "maxDisplayedLanguages": 1
   },
   "text": {
     "showAvailableExtensions": false,
