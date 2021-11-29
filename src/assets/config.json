@@ -44,6 +44,7 @@
     "translatePagePath": "TranslateProxy",
     "websiteTranslationUrl": "/webtranslate/embedded?embeddedStyle=noUI",
     "debug": false,
-    "logoLocation": "assets/logo.svg"
+    "logoLocation": "assets/logo.svg",
+    "hidePopup": true
   }
 }
