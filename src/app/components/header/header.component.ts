@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatMenu } from '@angular/material/menu';
 import { AppLanguageService } from '../../shared/services/app-language.service';
 
 @Component({
@@ -7,6 +8,8 @@ import { AppLanguageService } from '../../shared/services/app-language.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
+  @ViewChild("i18nMenu") menu!: MatMenu;
 
   get currentLanguage() { return this.appLanguage.currentLanguage; };
   readonly availableLanguages = ["en", "et", "de", "ru"];
@@ -17,4 +20,10 @@ export class HeaderComponent {
     this.appLanguage.setLanguage(code);
   }
 
+  onMenuOpen() {
+    if(this.menu){
+      const panel = document.getElementById(this.menu.panelId);
+      panel?.setAttribute("data-test-id", "ui-language-menu");
+    }
+  }
 }
