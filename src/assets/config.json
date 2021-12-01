@@ -37,8 +37,8 @@
     "audioTextInput": true
   },
   "file": {
-    "allowedFileTypes": [ ".docx", ".xls", ".xlsx", ".odt", ".tmx", ".pptx", ".txt" ],
-    "allowedFileTypesAuthUser": [ ".docx", ".xls", ".xlsx", ".odt", ".tmx", ".pptx", ".txt" ]
+    "allowedFileTypes": [ ".docx", ".xlsx", ".odt", ".tmx", ".pptx", ".txt" ],
+    "allowedFileTypesAuthUser": [ ".docx", ".xlsx", ".odt", ".tmx", ".pptx", ".txt" ]
   },
   "web": {
     "translatePagePath": "TranslateProxy",
