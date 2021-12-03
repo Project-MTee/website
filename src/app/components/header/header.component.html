@@ -6,7 +6,7 @@
   <div fxFlex fxLayoutAlign="center center" class="primary" >
     <h1  fxHide.lt-sm>{{'HEADER.TITLE' | translate}}</h1>
   </div>
-  <button mat-button [matMenuTriggerFor]="i18nMenu" color="primary" class="menu-item"
+  <button mat-button [matMenuTriggerFor]="i18nMenu" color="primary" class="menu-item" (menuOpened)="onMenuOpen()"
           #state="matMenuTrigger" [attr.aria-label]="'HEADER.LABEL_SELECT_LANGUAGE' | translate">
     <ng-container>
       <span class="current-lang" [attr.lang]="currentLanguage"><span>{{currentLanguage | uppercase}}</span></span>

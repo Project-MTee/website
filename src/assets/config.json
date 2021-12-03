@@ -37,8 +37,8 @@
     "audioTextInput": true
   },
   "file": {
-    "allowedFileTypes": [ ".docx", ".xls", ".xlsx", ".odt", ".tmx", ".pptx", ".txt" ],
-    "allowedFileTypesAuthUser": [ ".docx", ".xls", ".xlsx", ".odt", ".tmx", ".pptx", ".txt" ]
+    "allowedFileTypes": [ ".docx", ".xlsx", ".odt", ".tmx", ".pptx", ".txt" ],
+    "allowedFileTypesAuthUser": [ ".docx", ".xlsx", ".odt", ".tmx", ".pptx", ".txt" ]
   },
   "web": {
     "translatePagePath": "TranslateProxy",
@@ -46,5 +46,9 @@
     "debug": false,
     "logoLocation": "assets/logo.svg",
     "hidePopup": true
+  },
+  "audio":{
+    "audioApiUrl": "https://mt.cs.ut.ee/api/speech-to-text",
+    "audioTextInput": true
   }
 }
