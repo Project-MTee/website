@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ITldTranslateCoreConfig, ITldTranslateFileConfig, ITldTranslateTextConfig } from 'tld-translate/lib/modules/tld-common/models';
+import { ITldTranslateConfig } from 'tld-translate/lib/modules/tld-common/models';
 import { ConfigService } from '../../shared/services/config.service';
 
 @Component({
@@ -8,16 +8,15 @@ import { ConfigService } from '../../shared/services/config.service';
   styleUrls: ['./translate.component.scss']
 })
 export class TranslateComponent implements OnInit {
-  coreConfig!: ITldTranslateCoreConfig;
-  fileConfig!: ITldTranslateFileConfig;
-  textConfig!: ITldTranslateTextConfig;
+  config: ITldTranslateConfig = {};
 
-  constructor(private readonly config: ConfigService) { }
+  constructor(private readonly configService: ConfigService) { }
 
   ngOnInit(): void {
-    this.coreConfig = this.config.appConfig.core;
-    this.textConfig = this.config.appConfig.text;
-    this.fileConfig = this.config.appConfig.file;
+    this.config.core = this.configService.appConfig.core;
+    this.config.text = this.configService.appConfig.text;
+    this.config.file = this.configService.appConfig.file;
+    this.config.audio = this.configService.appConfig.audio;
   }
 
 }

@@ -1,6 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { Subscription } from 'rxjs';
-import { ITldTranslateCoreConfig, ITldTranslateTextConfig, ITldTranslateWebsiteConfig } from 'tld-translate/lib/modules/tld-common/models';
+import { Component, OnInit } from '@angular/core';
+import { ITldTranslateConfig } from 'tld-translate/lib/modules/tld-common/models';
 import { ConfigService } from '../../shared/services/config.service';
 
 @Component({
@@ -9,14 +8,12 @@ import { ConfigService } from '../../shared/services/config.service';
   styleUrls: ['./web-translate.component.scss']
 })
 export class WebTranslateComponent implements OnInit {
-  coreConfig!: ITldTranslateCoreConfig;
-  webtranslateConfig!: ITldTranslateWebsiteConfig;
+  config: ITldTranslateConfig = {};
 
-  constructor(private readonly config: ConfigService) { }
+  constructor(private readonly configService: ConfigService) { }
   ngOnInit(): void {
-    this.webtranslateConfig = this.config.appConfig.web;
-    this.coreConfig = this.config.appConfig.core;
-    console.log(this.config);
+    this.config.webTranslate = this.configService.appConfig.web;
+    this.config.core = this.configService.appConfig.core;
   }
 
   onError(error: any): void {

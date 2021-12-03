@@ -46,5 +46,9 @@
     "debug": false,
     "logoLocation": "assets/logo.svg",
     "hidePopup": true
+  },
+  "audio":{
+    "audioApiUrl": "https://mt.cs.ut.ee/api/speech-to-text",
+    "audioTextInput": true
   }
 }
