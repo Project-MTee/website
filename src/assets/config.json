@@ -49,6 +49,7 @@
   },
   "audio":{
     "audioApiUrl": "https://mt.cs.ut.ee/api/speech-to-text",
-    "audioTextInput": true
+    "audioTextInput": true,
+    "sourceLanguages": ["et"]
   }
 }
