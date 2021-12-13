@@ -17,5 +17,10 @@
   "TLD_TRANSLATE": {
     "SOURCE_TOOLTIP": "Enter the text you would like to translate.",
     "UPLOAD_FILE_BUTTON": "+ Upload or drag a file"
+  },
+  "WEBTRANSLATE_DISCLAIMER": {
+    "DISCLAIMER": "Website content may not load, display properly, or be fully functional in a restricted translation environment.",
+    "MORE": "Read more...",
+    "DISCLAIMER2": "Website translation is not perfect, please be patient! Websites are complex, and this may make them less responsive. As a result, the following errors may occur: content that loads only partially, inability to use dynamic functionality such as authentication, navigation to other pages, or the web site may not load."
   }
 }

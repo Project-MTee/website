@@ -1,0 +1,17 @@
+<div class="disclaimer-dialog" role="dialog" aria-live="polite">
+  <div fxLayout="row" class="disclaimer-wrapper">
+    <div fxFlex>
+      <p>{{"WEBTRANSLATE_DISCLAIMER.DISCLAIMER" | translate}}
+        <a *ngIf="!showText" (click)="showFullText()">
+          <strong>{{"WEBTRANSLATE_DISCLAIMER.MORE" | translate}}</strong>
+        </a>
+      </p>
+      <p *ngIf="showText">{{"WEBTRANSLATE_DISCLAIMER.DISCLAIMER2" | translate}}</p>
+    </div>
+    <div fxLayoutAlign="end ">
+      <button mat-icon-button color="warn" aria-label="close button" (click)="close()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
