@@ -9,7 +9,7 @@
       <p *ngIf="showText">{{"WEBTRANSLATE_DISCLAIMER.DISCLAIMER2" | translate}}</p>
     </div>
     <div fxLayoutAlign="end ">
-      <button mat-icon-button color="warn" aria-label="close button" (click)="close()">
+      <button mat-icon-button color="warn" [attr.aria-label]="'WEBTRANSLATE_DISCLAIMER.CLOSE_LABEL' | translate" (click)="close()">
         <mat-icon>close</mat-icon>
       </button>
     </div>
