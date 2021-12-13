@@ -2,4 +2,5 @@
   <tld-translate-website [config]="config"
                          (onError)="onError($event)"></tld-translate-website>
 </div>
+<app-webtranslate-disclaimer *ngIf="showDisclaimer" (closeDisclaimer)="onDisclaimerCose()"></app-webtranslate-disclaimer>
 

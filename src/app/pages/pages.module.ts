@@ -10,6 +10,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from '../shared/material.module';
 import { WebTranslateComponent } from './web-translate/web-translate.component';
+import { WebtranslateDisclaimerComponent } from './web-translate/webtranslate-disclaimer/webtranslate-disclaimer.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -20,6 +22,7 @@ import { WebTranslateComponent } from './web-translate/web-translate.component';
     PrivacyComponent,
     TranslateComponent,
     WebTranslateComponent,
+    WebtranslateDisclaimerComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { WebTranslateComponent } from './web-translate/web-translate.component';
     HttpClientModule,
     MaterialModule,
     TldTranslateModule,
-    TldWebModule
+    TldWebModule,
+    TranslateModule
   ]
 })
 export class PagesModule { }
