@@ -1,12 +1,13 @@
 {
   "/TranslateProxy": {
     "target": "https://localhost:44330/",
-    "secure": false
+    "secure": false,
+    "pathRewrite": {"^/TranslateProxy" : ""}
   },
   "/api/translate/languageDirection":{
     "target": "http://localhost:5002",
     "secure": false,
-    "pathRewrite": {"^/api/translate" : ""} 
+    "pathRewrite": {"^/api/translate" : ""}
   },
   "/api/translate/text":{
     "target": "http://localhost:5003",

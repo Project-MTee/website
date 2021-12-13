@@ -63,7 +63,10 @@ a {
 }
 html body {
   tld-translate-switcher,
-  tld-translate-switcher button {
+  tld-translate-switcher button,
+  .translateWebsite .cancel-button,
+  .translateWebsite .restore-button,
+  .translateWebsite .translate-button {
     font-size: 18px !important;
   }
 
@@ -74,12 +77,25 @@ html body {
   .tld-translate-target-wrapper.empty-target-wrapper,
   .tld-translate-switcher-wrapper,
   .source-container,
-  .tld-translate-body-wrapper {
+  .tld-translate-body-wrapper,
+  .translateWebsite {
     background-color: white !important;
   }
 
+  @media screen and (max-width: 600px) {
+    .translate-container-header #website-frame-container {
+      top: 8.5em;
+    }
+    .action-btn-wrapper {
+      height: 36px;
+      margin: 0 100px 0 25px;
+    }
+  }
+
   .upload-button,
-  .translate-button {
+  .translate-button,
+  .translateWebsite .cancel-button,
+  .translateWebsite .restore-button {
     border-radius: 30px !important;
   }
 
