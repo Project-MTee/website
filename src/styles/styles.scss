@@ -82,4 +82,21 @@ html body {
   .translate-button {
     border-radius: 30px !important;
   }
+
+  .domain-title {
+    font-weight: normal !important;
+  }
+
+  .tld-translate-domain-selection {
+    padding-left: 1em;
+    border-left: 2px solid $border-color;
+  }
+
+  .tld-translate-wrapper {
+    border-radius: 10px !important;
+  }
+
+  tld-domain-list button {
+    color: $primary-color !important;
+  }
 }
