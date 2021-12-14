@@ -96,6 +96,20 @@ html body {
     border-radius: 10px !important;
   }
 
+  .tld-translate-mobile{
+    .tld-translate-domain-selection {
+      padding-left: 0.5em;
+      border-left: 2px solid $border-color;
+    }
+
+    tld-domain-list button .open-close-button-content{
+        display:inline-block;
+        max-width: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+  }
+
   tld-domain-list button {
     color: $primary-color !important;
   }
