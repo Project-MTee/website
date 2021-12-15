@@ -1,11 +1,10 @@
 import { Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { PrivacyComponent } from './privacy/privacy.component';
-import { TermsComponent } from './terms/terms.component';
-import { TranslateComponent } from './translate/translate.component';
 import { WebEmbeddedComponent } from 'tld-translate';
-import { WebTranslateComponent } from './web-translate/web-translate.component';
 import { MainComponent } from '../layout/main/main.component';
+import { AboutComponent } from './about/about.component';
+import { DataProtectionConditionsComponent } from './data-protection-conditions/data-protection-conditions.component';
+import { TranslateComponent } from './translate/translate.component';
+import { WebTranslateComponent } from './web-translate/web-translate.component';
 
 
 export const routes: Routes = [
@@ -22,13 +21,9 @@ export const routes: Routes = [
         component: AboutComponent
       },
       {
-        path: "terms",
-        component: TermsComponent
+        path: "data-protection-conditions",
+        component: DataProtectionConditionsComponent
       },
-      {
-        path: "privacy",
-        component: PrivacyComponent
-      }
     ]
   },
   {
