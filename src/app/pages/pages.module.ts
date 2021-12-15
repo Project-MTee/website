@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { AboutComponent } from './about/about.component';
-import { TermsComponent } from './terms/terms.component';
-import { PrivacyComponent } from './privacy/privacy.component';
 import { TranslateComponent } from './translate/translate.component';
 import { TldTranslateModule, TldWebModule } from 'tld-translate';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,17 +10,17 @@ import { MaterialModule } from '../shared/material.module';
 import { WebTranslateComponent } from './web-translate/web-translate.component';
 import { WebtranslateDisclaimerComponent } from './web-translate/webtranslate-disclaimer/webtranslate-disclaimer.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { DataProtectionConditionsComponent } from './data-protection-conditions/data-protection-conditions.component';
 
 
 
 @NgModule({
   declarations: [
     AboutComponent,
-    TermsComponent,
-    PrivacyComponent,
     TranslateComponent,
     WebTranslateComponent,
     WebtranslateDisclaimerComponent,
+    DataProtectionConditionsComponent,
   ],
   imports: [
     BrowserModule,
