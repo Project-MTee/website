@@ -22,15 +22,61 @@
     "4": {
       "TITLE": "About the project",
       "1": "The MTee machine translation platform was developed in 2021 as a collaboration between the Institute of Computer Science of the University of Tartu and Tilde. The responsible financier of the project is the Institute of the Estonian Language and the initiator and supporter of the project is the Ministry of Education and Research.",
-      "2": "MTee is open source and free of charge for all interested parties. More information about our system code and API can be found ...... All the materials without access restrictions that have been used to train MTee models are published in the Estonian Open Data Portal.",
+      "2": "MTee is open source and free of charge for all interested parties. More information about our system code and API can be found <a target=\"_blank\" href=\"https://github.com/Project-MTee\">here</a>. All the materials without access restrictions that have been used to train MTee models are published in the Estonian Open Data Portal.",
       "3": "We would like to thank all the organizations who have shared their translation materials with us and thus helped to create the best quality machine translation in Estonian!"
     },
     "5": {
       "TITLE": "Contact",
-      "1": "If you wish to learn more about the machine translation solution, start using it in your organization or share translation materials, contact the Competence Centre for NLP at the Institute of the Estonian Language at ktkk@eki.ee."
+      "1": "If you wish to learn more about the machine translation solution, start using it in your organization or share translation materials, contact the Competence Centre for NLP at the Institute of the Estonian Language at <a href=\"mailto:ktkk@eki.ee\">ktkk@eki.ee</a>."
     }
   },
-  "DATA_PROTECTION": {},
+  "DATA_PROTECTION": {
+    "TITLE": "Data Protection Conditions",
+    "TITLE_DESCRIPTION_1":"MTee machine translation service is based on the machine translation technology for the public sector, which is adapted for automatic translation of texts from the general domain and from customized specific domains.",
+    "TITLE_DESCRIPTION_2":"The owner and the chief processor of the MTee machine translation service, as a machine translation system, is the Institute of the Estonian Language (hereinafter EKI).",
+    "TITLE_DESCRIPTION_3":"Users of the MTee machine translation service are all physical or legal persons who use the website of the MTee machine translation service or use the service through the application programming interface (hereinafter API).",
+    "1":{
+      "TITLE":"General provisions",
+      "A":"Use of the MTee machine translation service is the use of the machine translation system and its features (made available through the MTee machine translation service) in any way or for any purpose through the API or the service website and the use of any other information displayed on the website.",
+      "B":"The website of the MTee machine translation service can be visited only with the general-purpose Internet browsers (Chrome, Mozilla Firefox, Edge, Opera, Safari and others).",
+      "C":"Visiting the website of the MTee machine translation service with special purpose programs for any purpose is forbidden without a previous written consent of EKI. The special purpose program is a program that is not intended for general purpose Internet browsing or which work is not directly controlled by a human. The special purpose programs include API usage, scripts, robots and automated tools or programs that are not intended for Internet browsing.",
+      "D":"The activities that disturb or hinder the provision of MTee machine translation service are not allowed, including the user must refrain from overloading the computer network and servers.",
+      "E":"In the case where a provision of the terms of use is invalid due to conflict with the law, it will not affect the validity of the remaining provisions of the terms of use.",
+      "F":"The code of the MTee machine translation system is public.",
+      "G":"The use of the MTee machine translation service is free of charge for all users.",
+      "H":"EKI has the right to unilaterally amend the terms at any time. The terms and conditions shall be deemed to be valid as amended as of the notification of the changes on the website and the future use of the MTee machine translation service.",
+      "I":"EKI has the right to change and develop the MTee machine translation service website, API and machine translation system at any time at its own discretion. EKI also has the right to terminate the provision of the service at any time."
+    },
+    "2":{
+      "TITLE":"Use of data and acceptance of all terms of use",
+      "A":"The user is aware of the processing and extent of the data entered on the website and the information arising from the use of the website: the use of the data complies with the requirements of the General Data Protection Regulation of the European Union and the Personal Data Protection Act.",
+      "B":"The MTee machine translation service website and the machine translation system shall not collect or store any personal data, except for the time of the translation process referred to in points f), g) and h).",
+      "C":"Non-personalised technical data (user's IP address, geographical location, etc.) are not collected when visiting the website of the MTee machine translation service.",
+      "D":"The website of the MTee machine translation service does not use cookies.",
+      "E":"The text entered by the user in the text box of the MTee machine translation service and the generated translation are not saved.",
+      "F":"The website uploaded by the user (for the use of the MTee machine translation service) and the generated translation of the website are temporarily stored in the file system for 20 minutes for the system to translate the website. After 20 minutes, the saved data is automatically deleted from the system. The website of the MTee machine translation service and the machine translation system do not share the webpage / its translation nor the information contained in these with third parties.",
+      "G":"The document uploaded by the user (for the use of the MTee machine translation service) and the generated translation are temporarily stored in the file system for 20 minutes for the system to translate the document and the user to download the translated document. After 20 minutes, the saved data is automatically deleted from the system. The website of the MTee machine translation service and the machine translation system do not share the document / its translation nor the information contained in these with third parties.",
+      "H":"The audio file created by the user (for the use of the MTee machine translation service) through speech recognition is temporarily stored in the file system for 20 minutes, after which the recording is automatically deleted from the system. The website of the MTee machine translation service and the machine translation system do not share the recording nor the information contained in the recording with third parties."
+    },
+    "3":{
+      "TITLE":"Participants’ liability in data processing",
+      "A":"MTee machine translation system is hosted in the HPC (high performance computing) servers managed by University of Tartu until the end of 2022, after that in the servers managed by EKI. Servers are located in the territory of the European Union. Servers and machine translation software are maintained with up-to-date security updates.",
+      "B":"MTee machine translation service does not collect any fixed data, therefore no backups are made or stored.",
+      "C":"MTee machine translation is an automatic translation that has not been reviewed or edited by a person, therefore EKI does not guarantee the accuracy of the translation and is not responsible for other aspects related to the quality of the translation.",
+      "D":"EKI is responsible for the necessary development of the MTee website, API and machine translation system.",
+      "E":"EKI is not responsible for the failures of the MTee website / API / machine translation system caused by circumstances that are outside the control of EKI.",
+      "F":"EKI is not responsible for the content of the data and documents entered to the website and/or machine translation system by the users.",
+      "G":"The user is responsible for the text/document/voice recording entered into the machine translation system by them, which contains personal data or any confidential information.",
+      "H":"The user shall be liable for proprietary or non-proprietary damage caused to itself and for violation of the data protection requirements and for activities damaging the functioning of the MTee machine translation service."
+    },
+    "AGREEMENT_INFO":"By using the MTee machine translation service, you have read the above terms of use and are aware of the processing of your personal data in the manner set out in the terms of use.",
+    "CONTACTS_LABEL":"Institute’s address and contacts:",
+    "INSTITUTE_NAME":"<b>Institute of the Estonian Language</b>",
+    "STREET": "Roosikrantsi 6",
+    "CITY":"10119 Tallinn, ESTONIA",
+    "EMAIL":"E-mail: <a href=\"mailto:eki@eki.ee\">eki@eki.ee</a>"
+
+  },
   "FOOTER": {},
   "HEADER": {
     "LABEL_SELECT_LANGUAGE": "Select language",

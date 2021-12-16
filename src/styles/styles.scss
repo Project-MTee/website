@@ -102,17 +102,17 @@ html body {
     border-radius: 10px !important;
   }
 
-  .tld-translate-mobile{
+  .tld-translate-mobile {
     .tld-translate-domain-selection {
       padding-left: 0.5em;
       border-left: 2px solid $border-color;
     }
 
-    tld-domain-list button .open-close-button-content{
-        display:inline-block;
-        max-width: 50px;
-        overflow: hidden;
-        text-overflow: ellipsis;
+    tld-domain-list button .open-close-button-content {
+      display: inline-block;
+      max-width: 50px;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 
@@ -120,8 +120,28 @@ html body {
     color: $primary-color !important;
   }
 
-  .full-size{
-    width:100%;
-    height:100%;
+  .rule-page {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150ch;
+
+    ol.h2-list {
+      > li::marker {
+        font-size: 20px !important;
+      }
+
+      ol{
+        padding-left:0;
+      }
+    }
+
+    h2 {
+      margin: 20px 0 10px 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
   }
 }
