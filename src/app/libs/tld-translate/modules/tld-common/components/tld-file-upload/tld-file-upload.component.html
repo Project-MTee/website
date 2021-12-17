@@ -1,0 +1,12 @@
+<div fxLayout="row">
+  <div fxFlex>
+    <mat-progress-bar class="tld-file-upload-progress" color="primary" [value]="filePreviewProgress" *ngIf="filePreviewProgress"></mat-progress-bar>
+    <button tldDragAndDrop
+            #inputButton
+            (fileDropped)="onFileDrop($event)" [disabled]="disabled"
+            mat-stroked-button type="button" color="accent" (click)="fileInput.click()" class="upload-button">
+      <ng-content></ng-content>
+    </button>
+  </div>
+  <input #fileInput type="file" (change)="handleFileInput($event)" name="files" class="native-file-input" [accept]="allowedExtensions" [multiple]="multiple"/>
+</div>

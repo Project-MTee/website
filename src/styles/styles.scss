@@ -1,14 +1,9 @@
 @use "~@angular/material" as mat;
 
-@import "~tld-translate/src/styles/mixin/tld-translate-accent-colors";
-@import "~tld-translate/src/styles/mixin/tld-translate-placeholders";
-@import "variables/colors";
-@import "theme";
+@import "colors";
 
 html,
 body {
-  @include tld-translate-accent-colors($primary-color);
-  @include tld-translate-placeholders($description-text);
   height: 100%;
   background-color: $body-background;
 }
@@ -59,89 +54,48 @@ a {
 }
 
 .menu-item {
-  font-size: 18px;
+  font-size: 18px!important;
 }
-html body {
-  tld-translate-switcher,
-  tld-translate-switcher button,
-  .translateWebsite .cancel-button,
-  .translateWebsite .restore-button,
-  .translateWebsite .translate-button {
-    font-size: 18px !important;
-  }
 
+html body {
   mat-icon[color="accent"] svg {
     fill: $primary-color;
   }
 
-  .tld-translate-target-wrapper.empty-target-wrapper,
-  .tld-translate-switcher-wrapper,
-  .source-container,
-  .tld-translate-body-wrapper,
-  .translateWebsite {
-    background-color: white !important;
+  .auto-vertical-overflow {
+    overflow-y: auto !important;
   }
+}
 
-  .upload-button,
-  .translate-button,
-  .translateWebsite .cancel-button,
-  .translateWebsite .restore-button {
-    border-radius: 30px !important;
-  }
+mat-dialog-container {
+  position: relative;
+}
 
-  .domain-title {
-    font-weight: normal !important;
-  }
+.full-width {
+  width: 100%;
+}
 
-  .tld-translate-domain-selection {
-    padding-left: 1em;
-    border-left: 2px solid $border-color;
-  }
+.rule-page {
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 150ch;
 
-  .tld-translate-wrapper {
-    border-radius: 10px !important;
-  }
-
-  .tld-translate-mobile {
-    .tld-translate-domain-selection {
-      padding-left: 0.5em;
-      border-left: 2px solid $border-color;
+  ol.h2-list {
+    > li::marker {
+      font-size: 20px !important;
     }
 
-    tld-domain-list button .open-close-button-content {
-      display: inline-block;
-      max-width: 50px;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    ol {
+      padding-left: 0;
     }
   }
 
-  tld-domain-list button {
-    color: $primary-color !important;
+  h2 {
+    margin: 20px 0 10px 0;
   }
 
-  .rule-page {
-    margin-top: 3em;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 150ch;
-
-    ol.h2-list {
-      > li::marker {
-        font-size: 20px !important;
-      }
-
-      ol{
-        padding-left:0;
-      }
-    }
-
-    h2 {
-      margin: 20px 0 10px 0;
-    }
-
-    p {
-      margin-bottom: 0;
-    }
+  p {
+    margin-bottom: 0;
   }
 }

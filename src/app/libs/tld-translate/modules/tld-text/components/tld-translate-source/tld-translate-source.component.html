@@ -1,0 +1,15 @@
+<div class="tld-translate-source-wrapper" fxFlex fxLayout="column">
+    <div class="source-input-wrapper" fxFlex>
+      <tld-textarea-with-background (sourceTextChanged)="onSourceTextChanged($event)" [textareaDisabled]="textareaDisabled"
+      [autoFocuss]="autoFocuss" [highlightTree]="sourceParagraphs" (sourceChangedManually)="changeSourceManually($event)" [gramCheck]="gramCheck"
+      fxFlex [maxCharLength]="maxCharLength"></tld-textarea-with-background>
+    </div>
+  <div fxLayout="column" fxFlex *ngIf="showPlaceHolder"
+       class="description-text tld-trg-placeholder">
+    <div fxFlex>
+      <p [innerHtml]="(webTranslation?'TLD_TRANSLATE.SOURCE_TOOLTIP':'TLD_TRANSLATE.SOURCE_TOOLTIP_ONLY_TEXT') | translate: {appName: appName}">
+      </p>
+    </div>
+
+  </div>
+</div>

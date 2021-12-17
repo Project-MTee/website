@@ -1,0 +1,37 @@
+<div
+  fxLayout="column"
+  class="h-100 tld-translate"
+  *ngIf="!showNoSystemsError"
+  [ngClass.lt-md]="'tld-translate-tablet'"
+  [ngClass.lt-sm]="'tld-translate-mobile'"
+>
+  <div class="tld-translate-wrapper" fxLayout="column" fxFlex>
+    <div class="tld-translate-switcher-wrapper tld-border-bottom">
+      <tld-translate-switcher
+        *ngIf="switcherOptions"
+        [disabled]="actionButtonDisabled"
+        [settings]="switcherOptions"
+        [buttonDisabled]="actionButtonDisabled"
+        (onDomainChange)="systemChange($event)"
+        (onActionClick)="translateButtonClick()"
+        (onLanguageSwap)="swapLanguages()"
+        (onSourceLanguageChange)="sourceLanguageChange($event)"
+        (onTargetLanguageChange)="targetLanguageChange($event)"
+      >
+      </tld-translate-switcher>
+      <tld-message
+        [@openCloseAnimation]
+        *ngFor="let message of messages; let ix = index"
+        [message]="message"
+        (onClose)="removeMessage(ix)"
+      ></tld-message>
+    </div>
+    <tld-translate-body fxFlex></tld-translate-body>
+  </div>
+</div>
+
+<tld-message
+  *ngIf="showNoSystemsError"
+  [message]="noSystemsError"
+  [hideClose]="true"
+></tld-message>

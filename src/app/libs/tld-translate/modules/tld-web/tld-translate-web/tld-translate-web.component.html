@@ -1,0 +1,70 @@
+<div id="widget" class="tld-translate-web">
+  <div class="translate-container-header">
+    <a href="/" id="home-link" [attr.title]="'WEBTRANSLATE.BACK' | translate">
+      <img [src]="logoLocation" alt="logo">
+    </a>
+    <div [ngClass.lt-sm]="'tld-translate-mobile'">
+
+      <div fxLayout="row" fxLayoutAlign="center center" class="address-wrapper">
+        <div fxFlex class="back-btn">
+
+          <button (click)="goToHome()" color="accent" mat-flat-button [attr.title]="'WEBTRANSLATE.BACK' | translate">
+            <mat-icon inline=true>chevron_left</mat-icon>
+          </button>
+
+        </div>
+        <div fxFlex class="">
+          <div data-text="address" class="">{{'WEBTRANSLATE.ADDRESS' | translate}}</div>
+        </div>
+        <div fxFlex="100%" class="address-input">
+          <input type="url" #url class="url w-100" autofocus="autofocus" [(ngModel)]="urlToTranslate"
+            (keyup.enter)="loadButtonClicked()" />
+        </div>
+        <div fxFlex class="load-btn">
+          <button (click)="loadButtonClicked()" color="accent" mat-flat-button
+            [attr.title]="'WEBTRANSLATE.LOAD_PAGE' | translate" [disabled]="!urlToTranslate">
+            <mat-icon inline=true>search</mat-icon>
+          </button>
+        </div>
+
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="center" class="tld-translate-switcher-wrapper">
+        <div fxLayout="row wrap" fxLayoutAlign>
+          <tld-translate-switcher
+            *ngIf="switcherOptions"
+            [disabled]="actionButtonDisabled"
+            [settings]="switcherOptions"
+            [showBtn]="false"
+            [hideOnSmallScreens]="false"
+            (onDomainChange)="systemChange($event)"
+            (onActionClick)="translateButtonClick()"
+            (onLanguageSwap)="swapLanguages()"
+            (onSourceLanguageChange)="sourceLanguageChange($event)"
+            (onTargetLanguageChange)="targetLanguageChange($event)">
+          </tld-translate-switcher>
+          <div fxFlexAlign="center" class="action-btn-wrapper">
+            <tld-translate-button
+              *ngIf="showTranslateBtn"
+              class="switcher-translate-button"
+              [disabled]="actionButtonDisabled || !urlToTranslate">
+            </tld-translate-button>
+            <button *ngIf="showCancel" mat-flat-button color="accent" (click)="cancel()"
+              class="cancel-button">{{'WEBTRANSLATE.CANCEL' | translate}}</button>
+            <button *ngIf="showRestore" mat-flat-button color="accent" (click)="restore()"
+              class="restore-button">{{'WEBTRANSLATE.RESTORE' | translate}}</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="website-frame-container">
+      <mat-progress-bar *ngIf="showProgress" color="accent" [mode]="mode" [value]="progressValue">
+      </mat-progress-bar>
+      <tld-message [@openCloseAnimation] *ngFor="let message of messages; let ix = index" [message]="message"
+        (onClose)="removeMessage(ix)"></tld-message>
+      <iframe #websiteFrame id="website-frame" src="about:blank"></iframe>
+    </div>
+  </div>
+</div>

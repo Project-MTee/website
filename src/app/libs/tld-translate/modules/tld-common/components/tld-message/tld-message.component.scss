@@ -1,0 +1,26 @@
+.info-message-box {
+  padding: .2em 0 .6em;
+  width: 100%;
+  position: relative;
+  background-color: #fdf3f3;
+  border-top: 2px solid;
+  margin-top: 5px;
+  margin-bottom: 15px;
+
+  &.success {
+    background-color: #f2fffb;
+    border-top-color: #259e76;
+    color: #006141;
+  }
+
+  &.error {
+    color: #940007;
+    background-color: #fdf3f3;
+    border-top-color: #e5242e;
+  }
+
+  &.warning {
+    border-top-color: #ff8c00;
+    background-color: #fff5cc;
+  }
+}

@@ -1,0 +1,51 @@
+@import "colors";
+@import "fonts";
+
+.tld-lang-list-wrapper {
+  max-width: 100%;
+
+  .tld-language-list-element {
+    padding: 0 12px;
+  }
+}
+
+.tld-lang-list:not(.single-element-list) {
+  .active {
+    .language-title:after {
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      display: block;
+      width: 16px;
+      height: 2px;
+    }
+  }
+}
+
+.tld-language-list-element {
+  &.active {
+    .span-block {
+      display: block;
+    }
+    .domain {
+      display: inline-block;
+      max-width: 90px;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.language-title {
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-family: $primary-font;
+
+}

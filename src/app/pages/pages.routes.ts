@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { WebEmbeddedComponent } from 'tld-translate';
 import { MainComponent } from '../layout/main/main.component';
+import { WebEmbeddedComponent } from '../libs/tld-translate/modules/tld-web';
 import { AboutComponent } from './about/about.component';
 import { DataProtectionConditionsComponent } from './data-protection-conditions/data-protection-conditions.component';
 import { TranslateComponent } from './translate/translate.component';

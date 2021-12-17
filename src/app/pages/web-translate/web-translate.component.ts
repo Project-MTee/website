@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ITldTranslateConfig } from 'tld-translate/lib/modules/tld-common/models';
+import { ITldTranslateConfig } from 'src/app/libs/tld-translate/modules/tld-common/models';
 import { ConfigService } from '../../shared/services/config.service';
 
 @Component({

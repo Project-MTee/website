@@ -87,10 +87,6 @@
     "ABOUT": "About project",
     "DATA_PROTECTION_CONDITIONS": "Data Protection Conditions"
   },
-  "TLD_TRANSLATE": {
-    "SOURCE_TOOLTIP": "Enter the text you would like to translate.",
-    "UPLOAD_FILE_BUTTON": "+ Upload or drag a file"
-  },
   "WEBTRANSLATE_DISCLAIMER": {
     "DISCLAIMER": "Website content may not load, display properly, or be fully functional in a restricted translation environment.",
     "MORE": "Read more...",

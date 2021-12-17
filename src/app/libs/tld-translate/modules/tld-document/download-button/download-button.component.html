@@ -1,0 +1,24 @@
+<div fxLayout="row">
+
+  <button mat-flat-button color="accent" (click)="onClick()" fxHide.xs="{{mobileVersion}}"
+    class="action-button download-button" [disabled]="disabled">
+    {{'TLD_TRANSLATE.DOWNLOAD_TRANSLATED' | translate}}
+  </button>
+  <button mat-flat-button color="accent" class="extension-button" #menuTrigger="matMenuTrigger"
+    *ngIf="extensions && extensions.length>1" [matMenuTriggerFor]="extensionMenu" [disabled]="disabled"
+    [attr.aria-label]="'ARIA_LABELS.SHOW_EXTENSIONS' | translate" fxLayoutAlign="center center">
+    <span class="material-icons">
+      arrow_drop_down
+    </span>
+  </button>
+</div>
+<mat-menu #extensionMenu="matMenu">
+  <div fxLayout="column">
+    <ng-container *ngFor="let extension of extensions">
+      <button mat-menu-item fxLayoutAlign="start center" *ngIf="canDownload(extension.extension)" class="language-title"
+        (click)="onClick(extension)">
+        {{extension.extension}}
+      </button>
+    </ng-container>
+  </div>
+</mat-menu>

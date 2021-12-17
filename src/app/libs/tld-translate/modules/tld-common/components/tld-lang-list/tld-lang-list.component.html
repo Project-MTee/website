@@ -1,0 +1,34 @@
+<div fxLayout="row" class="tld-lang-list-wrapper" fxLayoutAlign="start center">
+  <div fxLayout="row" fxLayoutAlign="center center" role="list" class="tld-lang-list"
+    [ngClass]="{'single-element-list': visibleLanguageList.length === 1}">
+    <ng-container *ngIf=" menuLanguageList.length > 0">
+      <tld-open-close-button
+        class="language-title active accent-color" [disabled]="disabled" #state="matMenuTrigger" (menuOpened)="onMenuOpen()"
+        [matMenuTriggerFor]="languageMenu" [isOpened]="state.menuOpen"  [ariaLabelCode]="menuTriggerAriaCode">
+        <span fxLayout.gt-sm="row">
+          <span>{{languageLocalizationKey + (firstVisible.code | uppercase) | translate}}</span>
+        </span>
+      </tld-open-close-button>
+    </ng-container>
+    <ng-container *ngIf="menuLanguageList.length === 0">
+      <div role="listitem" *ngFor="let language of visibleLanguageList" class="tld-language-list-element" [ngClass]="{'active accent-color' : isActive(language)}">
+        <button *ngIf="language" class="language-title" (click)="selectLanguage(language)"
+          [disabled]="disabled"
+          [attr.aria-label]="'LANGUAGES.' + (language.code | uppercase) | translate">
+          <span>{{languageLocalizationKey + (language.code | uppercase) | translate}}</span>
+        </button>
+      </div>
+      <tld-open-close-button #state="matMenuTrigger" [matMenuTriggerFor]="languageMenu" (menuOpened)="onMenuOpen()" [isOpened]="state.menuOpen"
+        *ngIf="menuLanguageList.length>0" [isIcon]="true" [ariaLabelCode]="menuTriggerAriaCode"></tld-open-close-button>
+    </ng-container>
+  </div>
+  <ng-content></ng-content>
+  <mat-menu #languageMenu="matMenu" fxLayout="column" panelId='src-lang-menu'>
+    <ng-container *ngFor="let language of menuLanguageList">
+    <button fxLayoutAlign="start center" [ngClass]="{'active accent-color' : isActive(language)}" mat-menu-item *ngIf="language" class="language-title"
+      (click)="selectLanguage(language)" [disabled]="disabled" [attr.aria-label]="'LANGUAGES.' + (language.code | uppercase) | translate">
+      <span>{{languageLocalizationKey + (language.code | uppercase) | translate}}</span>
+    </button>
+  </ng-container>
+  </mat-menu>
+</div>

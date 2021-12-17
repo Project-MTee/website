@@ -1,0 +1,12 @@
+<tld-open-close-button [isOpened]="state.menuOpen" #state="matMenuTrigger" [disabled]="disabled"
+[matMenuTriggerFor]="listMenu" (menuOpened)="onMenuOpen()" [ariaLabelCode]="ariaLabel">
+    <ng-content></ng-content>
+</tld-open-close-button>
+<mat-menu #listMenu="matMenu" fxLayout="column">
+    <ng-container *ngFor="let element of list">
+        <button fxLayoutAlign="start center" mat-menu-item [attr.aria-label]="(titleKey? element[titleKey]:element)"
+            *ngIf="element" class="tld-list-title" (click)="select(element)" [disabled]="disabled">
+            {{(titleKey? element[titleKey]:element) | titlecase}}
+        </button>
+    </ng-container>
+</mat-menu>

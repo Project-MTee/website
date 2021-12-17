@@ -1,0 +1,13 @@
+.action-button {
+  width: 100%;
+}
+
+.extension-button {
+  padding: 0;
+  min-width: 38px;
+  margin-left: 2px;
+}
+
+:host ::ng-deep svg {
+  fill: white;
+}

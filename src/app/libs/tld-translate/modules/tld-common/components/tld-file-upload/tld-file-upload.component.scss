@@ -1,0 +1,40 @@
+
+.file-name-list {
+  margin-left: 15px;
+}
+
+.file-name-label {
+  word-break: break-all;
+}
+
+.upload-button {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 16px;
+}
+
+.tld-file-over {
+  background-color: #e5e7e8;
+  border: 1px dashed blue;
+}
+
+.mat-stroked-button {
+
+  .mat-button-wrapper {
+    pointer-events: none;
+  }
+}
+
+.native-file-input {
+  display: none;
+}
+
+.tld-file-upload-progress {
+  ::ng-deep .mat-progress-bar-fill::after {
+    background-color: #1E457C;
+  }
+
+  ::ng-deep .mat-progress-bar-buffer {
+    background: white;
+  }
+}

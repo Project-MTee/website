@@ -1,0 +1,11 @@
+// same as backend.
+export enum TranslationStatuss {
+  INITIALIZING = "INITIALIZING",
+  EXTRACTING = "EXTRACTING",
+  WAITING = "WAITING",
+  TRANSLATING = "TRANSLATING",
+  SAVING = "SAVING",
+  COMPLETED = "COMPLETED",
+  ERROR = "ERROR",
+  QUEUING = "QUEUING"
+}

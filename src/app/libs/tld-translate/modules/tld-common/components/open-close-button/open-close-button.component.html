@@ -1,0 +1,17 @@
+<button [ngClass.lt-md]="'open-close-button-tablet'" mat-button [disabled]="disabled" *ngIf="!isIcon"
+    [attr.aria-label]="ariaLabelCode | translate">
+    <span fxLayout="row" fxLayoutAlign="center center">
+        <span class="open-close-button-content">
+            <ng-content></ng-content>
+        </span>
+        <span class="material-icons">
+            {{isOpened?'arrow_drop_up':'arrow_drop_down'}}
+        </span>
+    </span>
+</button>
+<button mat-icon-button [disabled]="disabled" *ngIf="isIcon" fxLayoutAlign="center center"
+    [attr.aria-label]="ariaLabelCode | translate">
+    <span class="material-icons">
+        {{isOpened?'arrow_drop_up':'arrow_drop_down'}}
+    </span>
+</button>

@@ -1,0 +1,119 @@
+@import 'colors';
+
+.tld-translate-body-wrapper {
+  border-top: 1px solid #cbd2d9;
+  overflow-y: auto;
+  position: relative;
+}
+
+.target-container {
+  position: relative;
+}
+
+.source-container {
+  position: relative;
+}
+
+.tld-translate-source-wrapper{
+  border-right: 1px solid #cbd2d9;
+  border-top: 1px solid #cbd2d9;
+  padding: 0em 1em 1em 1em;
+  position: relative;
+  overflow-y: auto;
+  word-break: break-all;
+  position: relative;
+}
+
+.tld-translate-target-wrapper {
+  background: $target-background;
+  padding: 0 1em;
+  border-top: 1px solid #cbd2d9;
+  word-break: break-all;
+  overflow-y: auto;
+}
+
+.tld-translate-target-footer {
+  padding: 0 1em;
+}
+
+.tld-target-preview-message {
+  color: #5577a9;
+  font-size: 12px;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.action-button {
+  min-width: 100px;
+  max-width: 200px;
+}
+
+.download-button, .translate-file-button {
+  min-width: 100px;
+  max-width: 200px;
+  top: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arrow-drop-down {
+  height: 100% !important;
+}
+
+.cancel-button {
+  margin: 1em 0;
+}
+
+.tld-translate-mobile {
+  :host ::ng-deep {
+    .no-preview {
+
+      .type {
+        height: 100px;
+        width: 100px;
+        font-size: 1em;
+      }
+    }
+
+    .mobile-hide-top-border {
+      border-top: none;
+    }
+  }
+}
+
+
+:host ::ng-deep .no-preview {
+  //height:100%;
+  display: table;
+  margin: auto;
+
+  .type {
+    color: #434242;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    //hard-coded so that no extra assets are made for web component
+    background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20inkscape%3Aversion%3D%220.48.5%20r10040%22%20sodipodi%3Adocname%3D%22filetype.svg%22%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%20xmlns%3Asodipodi%3D%22http%3A%2F%2Fsodipodi.sourceforge.net%2FDTD%2Fsodipodi-0.dtd%22%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%20xmlns%3Ainkscape%3D%22http%3A%2F%2Fwww.inkscape.org%2Fnamespaces%2Finkscape%22%0A%09%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22102.482px%22%0A%09%20height%3D%22136.021px%22%20viewBox%3D%220%200%20102.482%20136.021%22%20enable-background%3D%22new%200%200%20102.482%20136.021%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Csodipodi%3Anamedview%20%20id%3D%22base%22%20fit-margin-bottom%3D%225%22%20fit-margin-right%3D%225%22%20inkscape%3Acurrent-layer%3D%22layer1%22%20inkscape%3Awindow-width%3D%221840%22%20inkscape%3Awindow-x%3D%221271%22%20inkscape%3Apageshadow%3D%222%22%20inkscape%3Apageopacity%3D%220.0%22%20inkscape%3Awindow-height%3D%221051%22%20inkscape%3Awindow-maximized%3D%221%22%20inkscape%3Awindow-y%3D%22-9%22%20inkscape%3Adocument-units%3D%22px%22%20showgrid%3D%22false%22%20inkscape%3Azoom%3D%221.979899%22%20bordercolor%3D%22%23666666%22%20pagecolor%3D%22%23ffffff%22%20inkscape%3Acx%3D%22-15.860958%22%20inkscape%3Acy%3D%22106.2157%22%20borderopacity%3D%221.0%22%20fit-margin-left%3D%225%22%20fit-margin-top%3D%225%22%3E%0A%09%3C%2Fsodipodi%3Anamedview%3E%0A%3Cg%3E%0A%09%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%235D5D5D%22%20stroke-miterlimit%3D%2210%22%20points%3D%2295.116%2C45.071%2065.216%2C45.071%2065.216%2C15.75%20%09%22%2F%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20fill%3D%22%235D5D5D%22%20d%3D%22M65.151%2C15.834l29.314%2C29.314v75.256H9.085V15.834H65.151%20M65.565%2C14.834H8.085v106.57h87.38v-76.67%0A%09%09%09L65.565%2C14.834L65.565%2C14.834z%22%2F%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 2em;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.clear-button {
+  position: absolute;
+  right: 0;
+  top: -0.5em;
+  z-index: 3;
+}

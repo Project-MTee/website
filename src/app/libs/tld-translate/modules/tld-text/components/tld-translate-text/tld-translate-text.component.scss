@@ -1,0 +1,70 @@
+@import "colors";
+
+.go-to-webtranslate{
+  word-break: break-all;
+  display: inline;
+}
+
+.basic-margin {
+  margin: 1em;
+}
+
+.tld-translate-body-wrapper {
+  border-top: 1px solid #cbd2d9;
+}
+
+.source-container {
+  border-right: 1px solid #cbd2d9;
+  padding: 0;
+  overflow: auto;
+}
+
+.tld-translate-target-wrapper {
+  background: $target-background;
+
+  &.empty-target-wrapper {
+    background: $empty-target-background;
+  }
+}
+
+.full-height {
+  height: 100%;
+}
+
+.target-description {
+  margin-top: 0;
+}
+
+.target-container {
+  position: relative;
+}
+
+.translated-source {
+  //position:relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1 1 0 !important;
+  padding: 1em;
+
+  &.selectable-sentence{
+    cursor:pointer;
+  }
+}
+
+::ng-deep .target-highlight {
+  .tld-highlight-container {
+    padding: 1em;
+  }
+}
+
+.tld-copy-translation {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.dictionary-wrapper,
+.target-empty,
+.target-translated-text {
+  @extend .basic-margin;
+}

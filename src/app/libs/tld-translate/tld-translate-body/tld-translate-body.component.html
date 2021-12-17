@@ -1,0 +1,4 @@
+<ng-container>
+  <tld-translate-text *ngIf="!isFilePreviewLoaded" fxFlex (onFileChange)="fileUpload($event)" [filePreviewProgress]="filePreviewProgress"></tld-translate-text>
+  <tld-translate-file *ngIf="isFilePreviewLoaded" [translationFile]="file" fxFlex style="overflow-y:auto;"></tld-translate-file>
+</ng-container>
