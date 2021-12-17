@@ -1,0 +1,37 @@
+<div fxLayout="row" fxLayoutAlign="center center" class="tld-translate-switcher-container" #wrapper
+  [ngClass.lt-md]="'tld-translate-switcher-container-tablet'"
+  [ngClass.lt-sm]="'tld-translate-switcher-container-mobile'">
+
+  <div fxFlex fxLayout="row" fxLayoutAlign="start center">
+    <div fxHide.lt-md #fromLabel>{{'TLD_TRANSLATE.FROM' | translate}}</div>
+    <div fxFlex fxLayout="row" fxLayoutAlign="start center">
+      <tld-lang-list id="tld-source-language-list" [disabled]="disabled" [testId]="srcLangTestId"
+        [languages]="settings.sourceLanguageList" (onLanguageChange)="sourceLangChange($event)"
+        [selected]="settings.source"></tld-lang-list>
+      <div class="tld-translate-domain-selection" fxLayoutAlign="center center" *ngIf="showDomains" #domainWrapper>
+        <tld-domain-list fxLayoutAlign="center center" (selectionChange)="domainChange($event)"
+          [list]="settings.domains.domains" [selected]="settings.domains.active" [selected]="settings.domains.active"
+          [disabled]="disabled"></tld-domain-list>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button [disabled]="isSwapLanguagesDisabled" class="swap-languages-button" mat-icon-button
+      (click)="swapSourceAndTarget()" aria-label="swap languages" color="accent"
+      matTooltip="{{'TOOLTIPS.SWAP_LANGUAGES' | translate}}">
+      <span class="material-icons" aria-hidden="false"
+        [attr.aria-label]="'ARIA_LABELS.SWAP_LANGUAGES' | translate">swap_horiz</span>
+    </button>
+  </div>
+  <div fxFlex fxLayout="row" fxLayoutAlign="start center" fxLayoutAlign.lt-sm="end center">
+    <div fxHide.lt-md #toLabel>{{'TLD_TRANSLATE.TO' | translate}}</div>
+    <div fxFlex fxLayout="row" fxLayoutAlign="start center">
+      <tld-lang-list [disabled]="disabled" id="tld-target-language-list" [languages]="settings.targetLanguageList"
+        (onLanguageChange)="targetLangChange($event)" [selected]="settings.target"
+        [testId]="trgLangTestId" (onDomainChange)="domainChange($event)">
+      </tld-lang-list>
+    </div>
+    <tld-translate-button *ngIf="showBtn" class="switcher-translate-button" [fxHide.lt-sm]="hideOnSmallScreens"
+      [disabled]="buttonDisabled"></tld-translate-button>
+  </div>
+</div>

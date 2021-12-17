@@ -1,0 +1,44 @@
+<ng-template #highlightTree let-tree="tree">
+    <ng-container *ngIf="!tree.children">
+        <ng-container *ngIf="tree.text">
+            <ng-container *ngIf="tree.grammarMeta && gramCheck">
+                <mat-menu #menu="matMenu" class="grammar-check-menu">
+                    <div class="title">
+                        {{'GRAMMAR_CHECK_MENU.TITLE' | translate}}
+                    </div>
+                    <div *ngFor="let replacement of tree.grammarMeta.replacements">
+                        <button mat-button color="accent" (click)="replace(tree, replacement)">
+                            {{replacement}}
+                        </button>
+                    </div>
+                </mat-menu>
+                <span #menuTrigger="matMenuTrigger" [matMenuTriggerFor]="menu" class="{{tree.class}}"
+                    [innerHTML]="tree.text" (mouseenter)="mouseEnter($event)" (click)="gramCheckMenu(tree, menuTrigger)"
+                    (mouseleave)="mouseLeave($event)"></span>
+
+            </ng-container>
+            <ng-container *ngIf="!(tree.grammarMeta && gramCheck)">
+                <span class="{{tree.class}}" [innerHTML]="tree.text" (mouseenter)="mouseEnter($event)"
+                    (mouseleave)="mouseLeave($event)"></span>
+            </ng-container>
+        </ng-container>
+        <ng-container *ngIf="!tree.text">
+            <br>
+        </ng-container>
+    </ng-container>
+    <ng-container *ngIf="tree.children">
+        <span [ngClass]="{'selected-sentence': isSelectedSentence(tree)}" class="highlight-tree-child-wrapper {{tree.class}}"
+            (mouseenter)="mouseEnter($event)" (mouseleave)="mouseLeave($event)" (click)="parentClick(tree)">
+            <ng-template ngFor let-child [ngForOf]="tree.children">
+                <ng-template [ngTemplateOutlet]="highlightTree" [ngTemplateOutletContext]="{ tree: child }">
+                </ng-template>
+            </ng-template>
+        </span>
+    </ng-container>
+</ng-template>
+
+
+
+<div *ngIf="tree" class="tld-highlight-tree">
+    <ng-template [ngTemplateOutlet]="highlightTree" [ngTemplateOutletContext]="{ tree: tree }"></ng-template>
+</div>

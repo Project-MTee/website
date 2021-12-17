@@ -20,6 +20,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles",
+                "src/styles/variables"
+              ]
+            },
             "outputPath": "dist/website-mtee",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -28,16 +34,11 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              {
-                "glob": "**/*",
-                "input": "./node_modules/tld-translate/src/assets/",
-                "output": "./assets/"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles/styles.scss",
-              "./node_modules/tld-translate/src/styles/styles.scss"
+              "src/styles/tld-translate.scss"
             ],
             "scripts": []
           },

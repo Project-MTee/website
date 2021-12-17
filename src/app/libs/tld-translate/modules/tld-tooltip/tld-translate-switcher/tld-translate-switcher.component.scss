@@ -1,0 +1,43 @@
+@import "colors";
+
+.tld-translate-switcher-container:not(.tld-translate-switcher-container-tablet, .tld-translate-switcher-container-mobile) {
+  tld-lang-list {
+    margin: 0 10px;
+  }
+}
+
+.tld-translate-switcher-container-mobile {
+  :host ::ng-deep {
+    button {
+      padding: 0 !important;
+    }
+  }
+}
+
+.swap-icon {
+  color: $primary;
+}
+
+.switcher-translate-button {
+  min-width: 100px;
+}
+
+mat-select {
+  min-width: 75px;
+  max-width: 125px;
+}
+
+.swap-languages-button[disabled] {
+  cursor: not-allowed;
+}
+
+.tld-translate-domain-selection,
+tld-translate-vendor-selection {
+  height: 100%;
+}
+
+
+.tld-translate-domain-selection {
+  padding-left: 1em;
+  border-left: 2px solid $border-color;
+}

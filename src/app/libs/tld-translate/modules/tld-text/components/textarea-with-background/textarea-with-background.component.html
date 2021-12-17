@@ -1,0 +1,15 @@
+<div class="textarea-with-background">
+    <textarea  [disabled]="textareaDisabled" cdkScrollable (paste)="onPaste($event)" matInput [(ngModel)]="sourceText" #sourceInput fxFlex
+        cdkScrollable spellcheck="false" (mousemove)="onTextAreaMouseMove($event)" [maxLength]="maxCharLength"
+        [attr.aria-label]="'TLD_TRANSLATE.SOURCE_TOOLTIP' | translate" (click)="textareaClick($event)"></textarea>
+    <div class="{{wrapperClass}}" *ngIf="gramCheck || highlight"  cdkScrollable #treeWrapper>
+        <div class="textarea-highlight-backround-inner" cdkScrollable>
+            <div *ngFor="let paragraph of highlightTree">
+                <tld-highlight-tree [isSource]="true" [tree]="paragraph" [highlight]="highlight" [gramCheck]="gramCheck"
+                    (onReplace)="replace($event)"></tld-highlight-tree>
+            </div>
+        </div>
+    </div>
+    <tld-close-button  [disabled]="textareaDisabled" class="clear-button" [ariaCode]="clearButtonAriaCode" (tldClick)="clearSource()"
+        *ngIf="sourceText"></tld-close-button>
+</div>

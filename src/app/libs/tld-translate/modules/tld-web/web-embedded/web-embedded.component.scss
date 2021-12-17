@@ -1,0 +1,25 @@
+#letsmt-translate-page-content {
+  padding: 0;
+  height: 3em;
+}
+
+#letsmt-translate-page-content a img {
+  border: 0;
+}
+
+#letsmt-translate-page-iframe-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#letsmt-translate-page-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#letsmt-translate-page-content.no-ui #letsmt-translate-page-iframe-container {
+  top: 0;
+}

@@ -1,0 +1,57 @@
+@import 'fonts';
+
+textarea {
+  resize: none!important;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  z-index:1;
+  background-color:transparent;
+  font-family: $primary-font;
+  padding:0;
+  line-height:1.5;
+  word-break: break-word;
+  padding:1em!important;
+  caret-color:black!important;
+}
+
+
+.tld-translate-source-wrapper {
+  position: relative;
+  cursor: text;
+}
+
+.clear-button {
+    position:absolute;
+    right:0;
+    top:-0.5em;
+    z-index:3;
+}
+
+.source-input-wrapper {
+  position:relative;
+}
+
+.background-source {
+  position: absolute;
+  margin-right:10px;
+  padding: 1em;
+  height: 100%;
+  max-height: 100%;
+}
+
+.tld-trg-placeholder {
+  padding: 1em 1em 0 1em;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size:1em;
+
+  p {
+    margin: 0;
+  }
+}
+
+.extension-container{
+    z-index:2;
+}

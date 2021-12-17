@@ -1,0 +1,5 @@
+<span fxHide.lt-md class="domain-title">{{'DOMAINS.TITLE' | translate}}</span>
+<tld-list-menu (selectionChange)="select($event)" [list]="translatedList" [titleKey]="titleKey" 
+[valueKey]="valueKey" testId="tld-domain-list" [disabled]="disabled" [ariaLabel]="'DOMAINS.OPEN_LIST_ARIA_LABEL' | translate">
+    {{selectedDomainName | titlecase}}
+</tld-list-menu>

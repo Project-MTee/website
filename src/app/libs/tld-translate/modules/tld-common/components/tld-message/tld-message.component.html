@@ -1,0 +1,5 @@
+<div fxFlex fxLayout="row" aria-live="polite" class="info-message-box {{className}}" [attr.id]="id" >
+  <div fxFlex [innerHtml]="message.text | translate: message.params">
+  </div>
+  <tld-close-button [ariaCode]="ClearLabelCode"  *ngIf="!hideClose" (tldClick)="close()" [attr.id]="closeButtonId"></tld-close-button>
+</div>

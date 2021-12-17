@@ -1,0 +1,27 @@
+.tld-loader {
+
+  .tld-loader-element {
+    will-change: transform;
+    border-radius: 50%;
+    animation: grow 0.6s ease-in-out infinite alternate;
+    width:24px;
+    height:24px;
+
+    &.element-1 {
+    }
+
+    &.element-2 {
+      animation-delay: 0.2s;
+    }
+
+    &.element-3 {
+      animation-delay: 0.4s;
+    }
+  }
+}
+
+@keyframes grow {
+  to {
+    transform: translateX(-50%) scale(0);
+  }
+}

@@ -1,0 +1,35 @@
+<div fxLayout="row" fxFlex>
+    <ng-container *ngIf="!(isRecording || isProcessing)">
+        <button [disabled]="!hasAnyMicrophone" mat-button mat-icon-button fxLayoutAlign="center center"
+            (click)="startRecording()" color="accent"  [attr.aria-label]="(hasAnyMicrophone?'AUDIO.START':'AUDIO.MIC_NOT_FOUND') | translate">
+            <span class="material-icons" *ngIf="hasAnyMicrophone" color="accent" 
+            [matTooltip]="'AUDIO.START' | translate">
+                mic
+            </span>
+            <span class="material-icons" [matTooltip]="'AUDIO.MIC_NOT_FOUND' | translate"
+                *ngIf="!hasAnyMicrophone">
+                mic_off
+            </span>
+        </button>
+    </ng-container>
+    <ng-container *ngIf="isRecording || isProcessing">
+        <div fxLayout="column">
+            <button mat-button mat-icon-button fxLayoutAlign="center center" [disabled]="!isRecording"
+                (click)="stopRecording()" color="accent" [matTooltip]="'AUDIO.STOP' | translate" [attr.aria-label]="'AUDIO.STOP' | translate">
+                <span class="material-icons">
+                    stop
+                </span>
+            </button>
+            <div class="tld-audio-timer" fxLayoutAlign="center center">
+                {{recordTimeDate | date:'mm:ss'}}
+            </div>
+        </div>
+        <div fxLayout="row" fxFlex fxLayoutAlign="center center">
+            <div fxFlex fxLayoutAlign="center center" data-test-id="voice-input-info">
+                <span *ngIf="isRecording">{{'AUDIO.DESCRIBE_STATE_RECORDING' | translate}}</span>
+                <span *ngIf="isProcessing">{{'AUDIO.DESCRIBE_STATE_PROCESSING' | translate}}</span>
+            </div>
+            <button mat-flat-button color="accent" (click)="cancel()">{{'AUDIO.CANCEL' | translate}}</button>
+        </div>
+    </ng-container>
+</div>

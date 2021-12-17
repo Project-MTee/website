@@ -1,7 +1,26 @@
+@import "theme";
+
 $body-background: #efeff1;
 $border-color: #dddddd;
 $footer-background: #383c4d;
 $white-text-color: white;
 $description-text: #626F7F;
 $disclaimer-border: #383c4d;
-$disclaimer-background: #DBDFEB
+$disclaimer-background: #DBDFEB;
+
+//from tld-translate
+$collection-header: #e8eaec;
+$primary: $primary-color;
+$accent: $primary-color;
+$background: #ffffff;
+$target-background: #ffffff;
+$description-text: #9aa5b1;
+$sentence-highlight:#e8e8e8;
+$word-highlight: #c8c8c8;
+$empty-target-background: #e8e8e8;
+$selected-sentence-background: #d6ebff;
+$source-download-color: #5a6672;
+$border-color: #cbd2d9;
+$button-border-color: rgba(0, 0, 0, 0.12);
+$incorrect-phrase-color: red;
+

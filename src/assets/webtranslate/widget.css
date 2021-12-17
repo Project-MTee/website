@@ -1,0 +1,139 @@
+.letsmt-widget-container {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 21px;
+}
+.letsmt-widget-container a img {
+  border: 0;
+}
+#letsmt-authorization {
+  float: right;
+}
+.letsmt-original-text-popup,
+#letsmt-update-translation-popup {
+  font-size: 13px;
+  line-height: 21px;
+  position: absolute;
+  background-color: #fff;
+  padding: 0.7em 1em 0.7em 1em;
+  border: solid 1px #444;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  min-width: 170px;
+  z-index: 2147483647;
+}
+.letsmt-original-text-popup a {
+  margin-top: 0.55em;
+  display: block;
+}
+.letsmt-original-text-popup label,
+#letsmt-update-translation-popup label {
+  font-size: 12px;
+  line-height: 21px;
+  margin: 0 0 0.3em 0;
+  font-weight: bold;
+  display: block;
+  color: #4d4d4f;
+}
+#letsmt-original-text-popup-close {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 12px 3px 12px;
+}
+#letsmt-original-text-popup-close img {
+  border: 0;
+}
+#letsmt-update-translation-popup {
+  position: fixed;
+}
+.letsmt-translation:hover {
+  background-color: #ffffe0 !important;
+  color: #000 !important;
+}
+.letsmt-translation:hover span,
+.letsmt-translation:hover em {
+  background-color: inherit;
+  color: inherit;
+}
+.letsmt-popup-button-row {
+  margin-top: 0.8em;
+  text-align: center;
+}
+.letsmt-popup-button-row a {
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+#letsmt-update-translation-original {
+  width: 550px;
+  margin-bottom: 1em;
+}
+#letsmt-update-translation-translations {
+  width: 550px;
+  margin-bottom: 0.5em;
+  overflow-y: auto;
+  clear: both;
+}
+.letsmt-update-translation-list-row {
+  border: solid 1px #888;
+  margin-bottom: 1em;
+}
+.letsmt-update-translation-list-row table {
+  display: block;
+}
+.letsmt-update-translation-list-row table,
+.letsmt-update-translation-list-row tr,
+.letsmt-update-translation-list-row td {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+}
+.letsmt-update-translation-list-row table td {
+  vertical-align: top;
+}
+.letsmt-update-translation-list-accepted {
+  background-color: #efe;
+}
+.letsmt-update-translation-list-row:last-child {
+  margin-bottom: 0;
+}
+.letsmt-update-translation-list-row .letsmt-update-translation-list-buttons {
+  padding: 0.5em;
+}
+.letsmt-update-translation-list-buttons a {
+  display: block;
+}
+.letsmt-update-translation-list-row .letsmt-update-translation-list-text {
+  width: 100%;
+}
+.letsmt-update-translation-list-row .letsmt-update-translation-list-text div {
+  padding: 0.5em 0 0 0.5em;
+}
+#letsmt-update-translation-popup textarea {
+  padding: 0.5em;
+  margin: 0;
+  border: solid 1px #888;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  resize: none;
+}
+#letsmt-update-translation-popup .letsmt-update-translation-list-row textarea {
+  border-top: 0;
+  border-left: 0;
+}
+#letsmt-update-translation-popup #letsmt-update-translation-translation {
+  width: 550px;
+  margin-bottom: 0.5em;
+}
+.letsmt-update-translation-list-row .letsmt-update-translation-list-metadata {
+  font-size: 11px;
+  vertical-align: bottom;
+  padding: 0.5em;
+}

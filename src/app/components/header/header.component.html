@@ -1,20 +1,23 @@
 <header fxLayout="row" fxLayoutAlign="start center">
-  <a [routerLink]="['/']">
-    <img class="logo" src="assets/logo.svg" [attr.alt]="'HEADER.ALT_LOGO' | translate" />
-  </a>
-
-  <div fxFlex fxLayoutAlign="center center" class="primary" >
-    <h1  fxHide.lt-sm>{{'HEADER.TITLE' | translate}}</h1>
+  <div fxFlex>
+    <a [routerLink]="['/']">
+      <img class="logo" src="assets/logo.svg" [attr.alt]="'HEADER.ALT_LOGO' | translate" />
+    </a>
   </div>
-  <button mat-button [matMenuTriggerFor]="i18nMenu" color="primary" class="menu-item" (menuOpened)="onMenuOpen()"
-          #state="matMenuTrigger" [attr.aria-label]="'HEADER.LABEL_SELECT_LANGUAGE' | translate">
-    <ng-container>
-      <span class="current-lang" [attr.lang]="currentLanguage"><span>{{currentLanguage | uppercase}}</span></span>
-    </ng-container>
-    <mat-icon matSuffix>{{state.menuOpen ? 'arrow_drop_up' : 'arrow_drop_down'}}</mat-icon>
-  </button>
-  <div class="menu-item">
-    <a [routerLink]="['/about']">{{'PAGES.ABOUT' | translate}}</a>
+  <div fxLayoutAlign="center center" class="primary">
+    <h1 fxHide.lt-sm>{{'HEADER.TITLE' | translate}}</h1>
+  </div>
+  <div fxFlex fxLayout="row" fxLayoutAlign="end center">
+    <button mat-button [matMenuTriggerFor]="i18nMenu" color="primary" class="menu-item" (menuOpened)="onMenuOpen()"
+      #state="matMenuTrigger" [attr.aria-label]="'HEADER.LABEL_SELECT_LANGUAGE' | translate">
+      <ng-container>
+        <span class="current-lang" [attr.lang]="currentLanguage"><span>{{currentLanguage | uppercase}}</span></span>
+      </ng-container>
+      <mat-icon matSuffix>{{state.menuOpen ? 'arrow_drop_up' : 'arrow_drop_down'}}</mat-icon>
+    </button>
+    <div class="menu-item">
+      <a fxLayoutAlign="center center" [routerLink]="['/about']">{{'PAGES.ABOUT' | translate}}</a>
+    </div>
   </div>
 </header>
 

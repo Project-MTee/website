@@ -1,0 +1,49 @@
+@import "fonts";
+
+.textarea-with-background {
+  position: relative;
+
+  .textarea-highlight-background {
+    position: absolute;
+    color: transparent;
+  }
+
+  tld-close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  textarea {
+    resize: none !important;
+    z-index: 1;
+    caret-color: black !important;
+  }
+  textarea,
+  .textarea-highlight-backround-inner {
+    padding: 1em !important;
+  }
+
+  .textarea-highlight-backround-inner {
+    $width: calc(100% - 2em);
+    $height: calc(100% - 2em);
+    max-width: $width;
+    width: $width;
+    min-width: $width;
+    min-height: $height;
+    max-height: $height;
+    height: $height;
+    overflow-y: auto;
+  }
+}
+
+.textarea-with-background,
+.textarea-highlight-background {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  height: 100%;
+}

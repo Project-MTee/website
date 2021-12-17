@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { TranslateLoader } from '@ngx-translate/core';
 import { forkJoin, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { TldTranslateService } from 'tld-translate';
+import { TldTranslateService } from 'src/app/libs/tld-translate/services';
 
 export class AppTranslationsLoader implements TranslateLoader {
   constructor(private readonly http: HttpClient, private readonly tldTranslate: TldTranslateService) { }

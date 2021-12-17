@@ -1,4 +1,4 @@
-import { ITldAudioConfig, ITldTranslateCoreConfig, ITldTranslateFileConfig, ITldTranslateTextConfig, ITldTranslateWebsiteConfig } from 'tld-translate/lib/modules/tld-common/models';
+import { ITldAudioConfig, ITldTranslateCoreConfig, ITldTranslateFileConfig, ITldTranslateTextConfig, ITldTranslateWebsiteConfig } from "src/app/libs/tld-translate/modules/tld-common/models";
 
 export interface IAppConfig {
   core: ITldTranslateCoreConfig;

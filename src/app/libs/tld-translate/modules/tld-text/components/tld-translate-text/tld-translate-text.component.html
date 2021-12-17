@@ -1,0 +1,54 @@
+<div class="tld-translate-body-wrapper"  [ngClass]="{'gramcheck-active': gramCheck}" fxLayout="row" fxLayout.lt-md="column" fxFlex>
+  <div fxFlex class="source-container" fxLayout="column">
+    <tld-translate-source [textareaDisabled]="textareaDisabled" #sourceComponent fxFlex (sourceTextChanged)="sourceTextChanged($event)"
+      [sourceParagraphs]="sourceParagraphs"></tld-translate-source>
+    <div fxLayout="row" fxLayoutAlign="start center" class="basic-margin" fxLayoutGap="1em">
+      <tld-record [ngClass]="{'full-width' : !fileUpload}" *ngIf="audioInputVisible">
+      </tld-record>
+      <tld-file-upload fxFlex *ngIf="fileUpload" (fileChange)="fileChange($event)"
+        [accept]="isAuth ? allowedFileTypesAuthUser : allowedFileTypes" [maxSize]="maxFileUploadSize"
+        [multiple]="false" (onError)="fileUploadError($event)" [filePreviewProgress]="filePreviewProgress">
+        <span
+          [innerHTML]="'TLD_TRANSLATE.UPLOAD_FILE_BUTTON' | translate"></span>
+      </tld-file-upload>
+    </div>
+  </div>
+  <div fxFlex="50" class="full-height target-container" fxLayout="column">
+    <div fxFlex fxLayout="column" class="tld-translate-target-wrapper full-height "
+      [class.empty-target-wrapper]="targetParagraphs?.length==0">
+      <div fxFlex fxLayout="column" class="full-height">
+        <div fxFlex fxLayout="column" class="description-text target-empty"
+          *ngIf="targetParagraphs?.length==0 && !urlToTranslate">
+          <div fxFlex>
+            <p class="target-description" [innerHtml]="'TLD_TRANSLATE.TARGET_DESCRIPTION' | translate">
+            </p>
+          </div>
+        </div>
+        <div fxFlex fxLayout="column" *ngIf="translatedText.length>0 || urlToTranslate" class="auto-vertical-overflow">
+          <div fxFlex class="translated-source" cdkScrollable>
+            <ng-container *ngIf="!urlToTranslate">
+              <div *ngFor="let paragraph of targetParagraphs">
+                <tld-highlight-tree [tree]="paragraph"></tld-highlight-tree>
+              </div>
+              <button mat-icon-button class="tld-copy-translation" (click)="copy()"
+                matTooltip="{{'TOOLTIPS.COPY' | translate}}" [attr.aria-describedby]="copyMessageId"
+                (keydown.Tab)="switchFocusFromCopy($event)" [attr.Id]="copyButtonId">
+                <span class="material-icons"  aria-hidden="false" [attr.aria-label]="'ARIA_LABELS.COPY' | translate">
+                  content_copy
+                </span>
+              </button>
+            </ng-container>
+            <div fxFlex *ngIf="urlToTranslate" class="target-url-container">
+              <a [attr.href]="translateUrlRedirect" target="_blank" fxLayoutAlign="start center" class="go-to-webtranslate">
+                {{urlToTranslate}}
+                <span class="material-icons"color="accent" aria-hidden="false" [attr.aria-label]="'ARIA_LABELS.OPEN_IN_NEW'">
+                  open_in_new
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

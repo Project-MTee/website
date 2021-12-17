@@ -1,0 +1,38 @@
+@mixin tld-translate-accent-colors($accent) {
+  .tld-translate {
+    button[color="accent"]:not(.mat-button-disabled) svg,
+    mat-icon[color="accent"] svg {
+      fill: $accent;
+    }
+  }
+
+  .accent-color {
+    color: $accent !important;
+  }
+
+  .accent-bg-color {
+    background-color: $accent !important;
+  }
+
+
+  // language-title styles should be outside of .tld-translate because language menu gets added to body and otherwise styles would not be applied.
+  .language-title, .tld-list-title {
+    &:hover:not([disabled]) {
+      color: $accent;
+    }
+  }
+
+  .tld-language-list-element.active {
+    .language-title {
+      color: $accent;
+    }
+  }
+
+  .tld-lang-list:not(.single-element-list) {
+    .active {
+      .language-title:after {
+        background: $accent;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<div fxFlex fxLayout="row" fxLayout.lt-md="column">
+  <div fxLayout="column" fxFlex class="source-container">
+    <div class="tld-translate-source-wrapper" fxLayout="column" fxFlex>
+      <div fxFlex fxLayout="column">
+        <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+          <div [innerHtml]="filePreview"></div>
+          <div>{{loadedFileName}}</div>
+        </div>
+      </div>
+    </div>
+      <tld-close-button class="clear-button" (click)="clearPreview()" [ariaCode]="clearButtonAriaCode"></tld-close-button>
+  </div>
+  <div fxFlex="50" class="target-container" fxLayout="column">
+    <div fxFlex fxLayout="column" class="tld-translate-target-wrapper">
+      <div *ngIf="showPreview">
+        <span [innerHtml]="translatedPreview"></span>
+      </div>
+      <div fxLayout="column" fxFlex *ngIf="translating">
+        <div fxLayoutAlign="end center">
+          <button mat-flat-button color="accent" (click)="cancel()" class="action-button cancel-button">{{'TLD_TRANSLATE.CANCEL_TRANSLATION' | translate}}</button>
+        </div>
+        <div fxFlex fxLayoutAlign="center center" fxLayout="column" role="progressbar">
+          <tld-loader></tld-loader>
+          <div *ngIf="translationStatuss==translatingStatus" aria-live="polite">{{progress}}%</div>
+          <div *ngIf="!translationStatuss">{{'TLD_TRANSLATE.FILE_TANSLATION_STATUSS_QUEUING' | translate}}</div>
+          <div *ngIf="translationStatuss" aria-live="polite">{{'TLD_TRANSLATE.FILE_TANSLATION_STATUSS_' + translationStatuss | translate}}</div>
+        </div>
+      </div>
+        <tld-translate-file-download-button class="download-button" (tldClick)="download($event)" [file]="translationFile" *ngIf="showPreview"
+                                            [disabled]="downloading"></tld-translate-file-download-button>
+      <tld-translate-button class="action-button translate-file-button"
+                            *ngIf="!translating && !showPreview"
+                            fxHide.gt-xs></tld-translate-button>
+    </div>
+    <div class="tld-translate-target-footer" *ngIf="translatedPreview" fxLayoutAlign="start center">
+      <p class="tld-target-preview-message">{{'TLD_TRANSLATE.FILE_TARGET_PREVIEW_MESSAGE' | translate}}</p>
+    </div>
+  </div>
+</div>

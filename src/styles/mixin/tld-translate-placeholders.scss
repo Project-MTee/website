@@ -1,0 +1,5 @@
+@mixin tld-translate-placeholders($color){
+    .tld-translate .description-text{
+        color:$color;
+    }
+}
