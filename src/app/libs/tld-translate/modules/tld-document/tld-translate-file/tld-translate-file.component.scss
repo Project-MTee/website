@@ -71,10 +71,6 @@
 
 .tld-translate-mobile {
   :host ::ng-deep {
-    .source-download-help {
-      font-size: small;
-    }
-
     .no-preview {
 
       .type {
@@ -120,18 +116,4 @@
   right: 0;
   top: -0.5em;
   z-index: 3;
-}
-
-.achievement-badge {
-  margin: 1em;
-}
-
-.download-source-button {
-  background-color: $source-download-color;
-  color: white;
-  margin-top: 1em;
-}
-
-.source-download-help {
-  word-break: break-word;
 }
