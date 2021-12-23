@@ -13,7 +13,6 @@ WORKDIR /app
 # Install NPM dependencies
 COPY package-lock.json .
 COPY package.json .
-COPY .npmrc .
 RUN npm install
 
 # Build app
