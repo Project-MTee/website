@@ -3,6 +3,7 @@ import { ILocalization } from "./models/localization.model";
 export const i18n_de: ILocalization = {
   "APP_NAME": "Tilde MT",
   "TLD_TRANSLATE": {
+    "UPLOAD_FILE_BUTTON": "+ Hochladen oder ziehen einer Datei",
     "DOWNLOAD_TRANSLATED": "Download übersetzt",
     "DOC_WORD_CNT_LIMIT_MSG": "Sie haben Ihr kostenloses Übersetzungslimit ({{wordCount}} Wörter) überschritten. Werden Sie registrierter Benutzer, um eine vollständige Übersetzung des Dokuments zu erhalten.  <a href=\"{{registerLink}}\">Zugang anfordern</a>",
     "PREPARING_TRANSLATION": "Übersetzung beginnt",
@@ -69,7 +70,18 @@ export const i18n_de: ILocalization = {
   "ERRORS": {
     "ERROR_DEFAULT": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut. Falls das Problem weiterbesteht, wenden Sie sich bitte an unseren <a href=\"mailto:{{email}}\"><strong>Support</strong></a>.",
     "E_FAILED_IN_TRANSLATION": "Beim Übersetzen ist ein Fehler aufgetreten.",
-    "MAX_CHAR_LENGTH": "Sie haben {{totalSymbols}} Zeichen eingegeben, es sind aber nur maximal {{maxCharLength}} erlaubt. Ihr Text wird daher gekürzt."
+    "MAX_CHAR_LENGTH": "Sie haben {{totalSymbols}} Zeichen eingegeben, es sind aber nur maximal {{maxCharLength}} erlaubt. Ihr Text wird daher gekürzt.",
+    "E_504": "Ihre Aktivität hat das Zeitlimit überschritten.",
+    "CANT_START_RECORDING": "Aufzeichnung kann nicht gestartet werden!",
+    "MIC_NOT_ALLOWED": "Sie haben keinen Zugriff auf das Mikrofon. Sie können dies in den Einstellungen des Browsers ändern.",
+    "MAX_SIZE_EXCEEDED": "Sie haben die maximale Größe  ({{maxSizeMb}}MB) für die Spracheingabe überschritten. Ihre Aufzeichnung wird unterbrochen und zur Bearbeitung weitergeleitet.",
+    "NO_TEXT_RECOGNIZED": "Es konnte keine Sprache erkannt werden. Bitte überprüfen Sie Ihr Mikrofon und versuchen Sie es erneut.",
+    "FILE_TRANSLATION_SUBSTATUS": {
+      "BAD_FILE_ERROR": "Die Datei konnte nicht übersetzt werden. Die Datei könnte beschädigt sein.",
+      "NO_TEXT_EXTRACTED_ERROR": "Es konnte kein Text gefunden werden. Datei könnte leer sein.",
+      "TRACK_CHANGES_ENABLED_ERROR": "Die Datei konnte nicht übersetzt werden. Bitte deaktivieren Sie Änderungen verfolgen in Ihrem Dokument und versuchen Sie es erneut.",
+      "UNKNOWN_FILE_TYPE_ERROR": "Dateityp nicht erkannt."
+    }
   },
   "ARIA_LABELS": {
     "CLOSE_BUTTON": "Löschen",
@@ -77,7 +89,11 @@ export const i18n_de: ILocalization = {
     "CLEAR_SOURCE": "Eingegebenen Text löschen",
     "CLOSE_DIALOG": "Dialog schließen",
     "CLEAR_FILES": "Hochgeladene Dateien löschen",
-    "SHOW_EXTENSIONS": "Weitere Download-Optionen zeigen"
+    "SHOW_EXTENSIONS": "Weitere Download-Optionen zeigen",
+    "COPY": "In die Zwischenablage kopieren",
+    "OPEN_IN_NEW": "In neuer Registerkarte öffnen",
+    "SWAP_LANGUAGES": "Sprachen ändern",
+    "OTHER_LANGUAGES_TRIGGER": "Andere Sprachen anzeigen"
   },
   "TOOLTIPS": {
     "COPY": "In Zwischenablage kopieren",
@@ -94,6 +110,23 @@ export const i18n_de: ILocalization = {
     "LAW": "Recht",
     "DYNAMIC_LEARNING": "Dynamisches Lernen",
     "BUSINESS": "Wirtschaft",
-    "GENERAL": "Allgemein"
+    "GENERAL": "Allgemein",
+    "OPEN_LIST_ARIA_LABEL": "Domänenliste öffnen",
+    "TITLE": "Domäne:",
+    "AUTO": "Automatische Erkennung",
+    "CRISIS": "Kriseninfos",
+    "LEGAL": "Recht",
+    "MILITARY": "Verteidigung"
+  },
+  "GRAMMAR_CHECK_MENU": {
+    "TITLE": "Wechsel zu:"
+  },
+  "AUDIO": {
+    "CANCEL": "Abbrechen",
+    "DESCRIBE_STATE_RECORDING": "Bitte sprechen Sie zur Aufzeichnung...",
+    "DESCRIBE_STATE_PROCESSING": "Bearbeitung...",
+    "MIC_NOT_FOUND": "Bearbeitung...",
+    "STOP": "Aufzeichnung beenden",
+    "START": "Aufzeichnung starten"
   }
 }

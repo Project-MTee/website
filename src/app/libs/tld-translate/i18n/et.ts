@@ -26,7 +26,7 @@ export const i18n_et: ILocalization = {
     "FILE_TANSLATION_STATUSS_TRANSLATING": "Tõlkimine...",
     "FILE_TANSLATION_STATUSS_SAVING": "Tõlke salvestamine...",
     "FILE_TANSLATION_STATUSS_QUEUING": "Tõlkimine algab...",
-    "UPLOAD_FILES_BUTTON": "Failide üleslaadimine või lohistamine"
+    "UPLOAD_FILE_BUTTON": "+ Faili üleslaadimine või lohistamine"
   },
   "LANGUAGES": {
     "LV": "Läti",
@@ -68,7 +68,18 @@ export const i18n_et: ILocalization = {
   "ERRORS": {
     "ERROR_DEFAULT": "Ilmnes ootamatu tõrge. Proovige uuesti. Kui probleem ei lahene, võtke ühendust <a href=\"mailto:{{email}}\"><strong>kasutajatoega</strong></a>.",
     "MAX_CHAR_LENGTH": "Olete sisestanud {{totalSymbols}} tähemärki, kuid suurim lubatud arv on {{maxCharLength}}. Teie teksti kärbitakse.",
-    "E_FAILED_IN_TRANSLATION": "Tõlkimisel ilmnes tõrge."
+    "E_FAILED_IN_TRANSLATION": "Tõlkimisel ilmnes tõrge.",
+    "E_504": "Teie tegevus on aegunud.",
+    "CANT_START_RECORDING": "Salvestamist ei saa alustada!",
+    "MIC_NOT_ALLOWED": "Olete keelanud juurdepääsu mikrofonile. Saate seda muuta veebilehitseja seadetes.",
+    "MAX_SIZE_EXCEEDED": "Olete ületanud kõnesisendi maksimumsuuruse ({{maxSizeMb}}MB). Teie salvestus peatatakse ja saadetakse töötlemisele.",
+    "NO_TEXT_RECOGNIZED": "Ühtegi kõnet ei tuvastatud. Kontrollige oma mikrofoni ja proovige uuesti.",
+    "FILE_TRANSLATION_SUBSTATUS": {
+      "BAD_FILE_ERROR": "Faili ei õnnestunud tõlkida. Fail võib olla vigane.",
+      "NO_TEXT_EXTRACTED_ERROR": "Teksti ei õnnestunud kätte saada. Fail võib olla tühi.",
+      "TRACK_CHANGES_ENABLED_ERROR": " Faili tõlkimine ebaõnnestus. Peatage oma dokumendis muudatuste jälgimise funktsioon ning proovige uuesti.",
+      "UNKNOWN_FILE_TYPE_ERROR": "Failitüüpi ei tuvastatud."
+    }
   },
   "ARIA_LABELS": {
     "CLOSE_BUTTON": "Eemalda",
@@ -76,7 +87,11 @@ export const i18n_et: ILocalization = {
     "CLEAR_SOURCE": "Eemalda sisestatud tekst",
     "CLOSE_DIALOG": "Sulge dialoog",
     "CLEAR_FILES": "Eemalda üleslaaditud failid",
-    "SHOW_EXTENSIONS": "Kuva muud allalaadimisvalikud"
+    "SHOW_EXTENSIONS": "Kuva muud allalaadimisvalikud",
+    "COPY": "Kopeeri lõikelauale",
+    "OPEN_IN_NEW": "Ava uuel vahelehel",
+    "SWAP_LANGUAGES": "Vaheta keeli",
+    "OTHER_LANGUAGES_TRIGGER": "Näita teisi keeli"
   },
   "TOOLTIPS": {
     "COPY": "Kopeerige lõikelauale",
@@ -93,6 +108,20 @@ export const i18n_et: ILocalization = {
     "LAW": "Juura",
     "DYNAMIC_LEARNING": "Dünaamiline õpe",
     "BUSINESS": "Äri",
-    "GENERAL": "Üldine"
+    "GENERAL": "Üldine",
+    "OPEN_LIST_ARIA_LABEL": "Ava domeenide loend",
+    "TITLE": "Domeen:",
+    "AUTO": "Automaattuvastus",
+    "CRISIS": "Kriisiinfo",
+    "LEGAL": "Õigus",
+    "MILITARY": "Riigikaitse"
+  },
+  "AUDIO": {
+    "CANCEL": "Loobu",
+    "DESCRIBE_STATE_RECORDING": "Palun rääkige, et salvestada...",
+    "DESCRIBE_STATE_PROCESSING": "Töötlemine...",
+    "MIC_NOT_FOUND": "Mikrofoni ei leitud",
+    "STOP": "Peata salvestamine",
+    "START": "Alusta salvestamist"
   }
 }

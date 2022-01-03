@@ -7,4 +7,7 @@ export interface IDomainsLocalization{
     DYNAMIC_LEARNING?: string;
     GENERAL?: string;
     AUTO?:string;
+    CRISIS?:string;
+    MILITARY?:string;
+    LEGAL?:string;
 }
