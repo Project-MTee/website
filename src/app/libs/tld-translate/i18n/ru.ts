@@ -112,7 +112,10 @@ export const i18n_ru: ILocalization = {
         "DYNAMIC_LEARNING": "Динамическое обучение",
         "BUSINESS": "Бизнес",
         "GENERAL": "Общий",
-        "AUTO": "Автоопределение"
+        "AUTO": "Автоопределение",
+        "CRISIS": "Кризис",
+        "LEGAL": "Право",
+        "MILITARY": "Oборона"
     },
     "GRAMMAR_CHECK_MENU": {
         "TITLE": "Изменить на:"

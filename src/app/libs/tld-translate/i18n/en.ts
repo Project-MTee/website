@@ -112,7 +112,10 @@ export const i18n_en: ILocalization = {
     "DYNAMIC_LEARNING": "Dynamic learning",
     "BUSINESS": "Business",
     "GENERAL": "General",
-    "AUTO": "Autodetect"
+    "AUTO": "Autodetect",
+    "CRISIS": "Crisis",
+    "LEGAL": "Legal",
+    "MILITARY": "Military"
   },
   "GRAMMAR_CHECK_MENU": {
     "TITLE": "Consider changing to:"

@@ -113,7 +113,10 @@ export const i18n_de: ILocalization = {
     "GENERAL": "Allgemein",
     "OPEN_LIST_ARIA_LABEL": "Domänenliste öffnen",
     "TITLE": "Domäne:",
-    "AUTO": "Automatische Erkennung"
+    "AUTO": "Automatische Erkennung",
+    "CRISIS": "Kriseninfos",
+    "LEGAL": "Recht",
+    "MILITARY": "Verteidigung"
   },
   "GRAMMAR_CHECK_MENU": {
     "TITLE": "Wechsel zu:"
