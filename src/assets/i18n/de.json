@@ -1,1 +1,94 @@
-{}
+{
+    "APP_NAME": "Übersetzungstool",
+    "ABOUT_PROJECT": {
+        "TITLE": "Über das Projekt",
+        "TITLE_DESCRIPTION_1": "MTee ist das bisher größte Projekt zur Entwicklung von Sprachtechnologien, das vom Institut für estnische Sprache und dem Ministerium für Bildung und Forschung initiiert wurde. Seine Innovation liegt in dem Testen der neuesten Entwicklungen im Bereich der maschinellen Übersetzungstechnologie. MTee arbeitet mit modernster Technologie auf der Basis neuronaler Netze, berücksichtigt Wörterbücher und Fachwortschätze bei der Übersetzung und ermöglicht die Übersetzung des gesprochenen Estnisch.",
+        "TITLE_DESCRIPTION_2": "Zurzeit ermöglicht die MTee-Plattform die Übersetzung in drei Sprachrichtungen: Estnisch-Englisch-Estnisch, Estnisch-Russisch-Estnisch und Estnisch-Deutsch-Estnisch. MTee ist als Werkzeug für Behörden, Übersetzungsbüros und freiberufliche Übersetzer gedacht, aber auch als Übersetzungshilfe für den normalen Benutzer.",
+        "1": {
+            "TITLE": "Bereichsspezifische maschinelle Übersetzung",
+            "1": "Im Gegensatz zu den anderen weit verbreiteten Übersetzungssystemen basiert MTee auf einer für die Übersetzung bereichsspezifischen Grundlage, denn je enger der Bereich ist, auf dem das maschinelle Übersetzungsmodell trainiert wird, desto höher ist die Übersetzungsqualität.",
+            "2": "Heute erkennt MTee Texte in drei Bereichen: öffentliche Gesundheit (mit Schwerpunkt auf Krisensituationen), Recht und Verteidigung, kann aber auch andere Textsorten wie Nachrichten, Websites und andere Texte übersetzen. Neben der Übersetzung von Textauszügen können auch Textdokumente hochgeladen und in demselben Format wie die Originaldatei übersetzt heruntergeladen werden."
+        },
+        "2": {
+            "TITLE": "Sprachübersetzung und Fehlerprüfung",
+            "1": "MTee ist das erste maschinelle Übersetzungssystem für Estnisch, mit dem Sie Sprache in Echtzeit übersetzen können: Nehmen Sie eine Sprache auf Estnisch auf und lassen Sie sich eine schriftliche Wiedergabe und Übersetzung davon anzeigen. Als zusätzliches Werkzeug ist in die maschinelle Übersetzung eine Grammatikprüfung integriert, die mögliche grammatische Fehler im estnischen Ausgangstext erkennt."
+        },
+        "3": {
+            "TITLE": "Wie geht es weiter?",
+            "1": "In den kommenden Jahren wird MTee weitere Bereiche und Sprachrichtungen hinzufügen und die Anzahl der Sprachen für die Spracherkennung erhöhen.",
+            "2": "Der Schwerpunkt wird auch auf der Weiterentwicklung der Qualität der maschinellen Übersetzung liegen. Jeder Nutzer kann zur Verbesserung der Qualität beitragen. Das maschinelle Übersetzungssystem wird auf großen Datenmengen trainiert, wobei Übersetzungsmaterialien eine entscheidende Rolle spielen. Sie können uns jederzeit Ihre eigenen Übersetzungstexte (zusammen mit dem Ausgangstext) zusenden, und wir garantieren, dass sie zugunsten der Übersetzungsqualität eingesetzt werden. Die Qualität einer Fachübersetzung hängt vor allem von den Übersetzungsmaterialien in diesem Bereich ab."
+        },
+        "4": {
+            "TITLE": "Über das Projekt",
+            "1": "Die Plattform für maschinelle Übersetzung MTee wurde im Jahr 2021 in Zusammenarbeit zwischen dem Institut für Informatik der Universität Tartu und dem Unternehmen Tilde entwickelt. Das Projekt wird vom Institut für estnische Sprache finanziert und vom Ministerium für Bildung und Forschung initiiert und unterstützt.",
+            "2": "MTee ist quelloffen und kann von jedermann kostenlos genutzt werden. Weitere Informationen über unseren Programmcode und API finden Sie <a target=\"_blank\" href=\"https://github.com/Project-MTee\">hier</a>. Alle frei zugänglichen Materialien, die zum Training des MTee-Systems verwendet wurden, werden auf dem estnischen Portal für offene Daten veröffentlicht.",
+            "3": "Wir möchten uns bei allen Institutionen bedanken, die uns ihr Übersetzungsmaterial zur Verfügung gestellt haben und uns geholfen haben, die beste maschinelle Übersetzung für Estnisch zu entwickeln!"
+        },
+        "5": {
+            "TITLE": "Kontaktaufnahme",
+            "1": "Wenn Sie mehr über die maschinelle Übersetzung erfahren, sie in Ihrer Organisation einsetzen oder Übersetzungsmaterialien aus Ihrem Fachbereich zur Verfügung stellen möchten, wenden Sie sich bitte an das Kompetenzzentrum für Sprachtechnologie des Instituts für estnische Sprache unter der folgenden Adresse <a href=\"mailto:ktkk@eki.ee\">ktkk@eki.ee</a>."
+        }
+    },
+    "DATA_PROTECTION": {
+        "TITLE": "Datenschutzbedingungen",
+        "TITLE_DESCRIPTION_1": "Das maschinelle Übersetzungssystem MTee basiert auf der Technologie des öffentlichen Sektors für maschinelle Übersetzung, die für die automatische Übersetzung von Texten in allgemeinen und fachlichen Bereichen geeignet ist.",
+        "TITLE_DESCRIPTION_2": "Der maschinelle Übersetzungsservice MTee als maschinelles Übersetzungssystem ist Eigentum des Instituts für estnische Sprache (im Folgenden IES genannt) und wird von diesem betrieben.",
+        "TITLE_DESCRIPTION_3": "Nutzer des maschinellen Übersetzungsservices MTee sind alle natürlichen und juristischen Personen, die die Website des maschinellen Übersetzungsservices MTee nutzen oder den Service über API (im Folgenden API genannt) in Anspruch nehmen.",
+        "1": {
+            "TITLE": "Allgemeine Bedingungen",
+            "A": "Die Nutzung des maschinellen Übersetzungsservices MTee umfasst die Nutzung des maschinellen Übersetzungssystems und seiner Funktionen, die durch den maschinellen Übersetzungsservice MTee in jeglicher Art und Weise oder zu jeglichem Zweck über API oder die Website des Services zur Verfügung gestellt werden, sowie andere auf der Website angezeigte Informationen in jeglicher Art und Weise oder zu jeglichem Zweck.",
+            "B": "Der Zugriff auf die Website des maschinellen Übersetzungsdienstes MTee ist nur mit Allzweckbrowsern möglich (Chrome, Internet Explorer, Mozilla Firefox, Mozilla, Opera, Safari).",
+            "C": "Der Zugriff auf die Website des maschinellen Übersetzungsservices MTee mit spezieller Software, egal zu welchem Zweck, ist ohne vorherige schriftliche Genehmigung der IES verboten. Ein Spezialprogramm ist ein Programm, das nicht für das allgemeine Surfen im Internet bestimmt ist oder das nicht direkt von einem Menschen bedient wird. Zu den Programmen für besondere Zwecke gehört unter anderem die Nutzung von API, Skripten, Robotern und automatisierten Tools oder Programmen, die nicht für das Surfen im Internet bestimmt sind.",
+            "D": "Bei der Nutzung des maschinellen Übersetzungsdienstes MTee ist jede Aktivität, die die Nutzung der Applikation stört oder behindert, unzulässig, dazu gehört auch die Verpflichtung des Nutzers, die Überlastung des Computernetzes und des Servers zu unterlassen.",
+            "E": "Sollte eine Bestimmung der Nutzungsbedingungen ungültig sein, weil sie rechtswidrig ist, so wird die Gültigkeit der übrigen Bestimmungen der Nutzungsbedingungen davon nicht berührt.",
+            "F": "Der Code des maschinellen Übersetzungssystems MTee ist öffentlich.",
+            "G": "Der maschinelle Übersetzungsservice MTee ist für alle Nutzer kostenlos.",
+            "H": "IES behält sich das Recht vor, diese Bedingungen jederzeit einseitig zu ändern. Die Allgemeinen Geschäftsbedingungen gelten für den Nutzer in der geänderten Version ab dem Datum der Bekanntgabe der Änderungen auf der Website und mit der weiteren Nutzung des maschinellen Übersetzungsservices MTee als gültig.",
+            "I": "IES behält sich das Recht vor, die Website des maschinellen Übersetzungsservices MTee, API und das maschinelle Übersetzungssystem nach eigenem Ermessen jederzeit zu ändern und weiterzuentwickeln. IES hat auch das Recht, den Service jederzeit einzustellen."
+        },
+        "2": {
+            "TITLE": "Die Nutzung der Daten und die Annahme der Nutzungsbedingungen",
+            "A": "Der Nutzer ist sich der Verarbeitung der auf der Website eingegebenen Daten und der sich aus der Nutzung der Website ergebenden Informationen bewusst und weiß, inwieweit die Verarbeitung der Daten den Anforderungen der EU-Datenschutzgrundverordnung und des Gesetzes zum Schutz personenbezogener Daten entspricht.",
+            "B": "Die Website des maschinellen Übersetzungsservices MTee und das maschinelle Übersetzungssystem MTee erheben und speichern keine personenbezogenen Daten, außer den für die Dauer des Übersetzungsprozesses gemäß den Punkten f), g) und h) notwendigen Daten.",
+            "C": "Beim Besuch der Website des maschinellen Übersetzungsservices MTee werden keine nicht persönlich identifizierbaren technischen Daten (IP-Adresse des Nutzers, geografischer Standort usw.) erhoben.",
+            "D": "Die Website des maschinellen Übersetzungsservices MTee verwendet keine Cookies.",
+            "E": "Der vom Benutzer in das Textfeld des maschinellen Übersetzungsservices MTee eingegebene Text und seine Übersetzung werden nicht gespeichert.",
+            "F": "Die vom Benutzer hochgeladene Webseite und ihre Übersetzung werden zur Nutzung des maschinellen Übersetzungsservices MTee für 20 Minuten im Dateisystem zwischengespeichert, damit das System die Webseite übersetzen kann. Nach 20 Minuten wird die Datei automatisch aus dem System gelöscht. Die Website des maschinellen Übersetzungsservices MTee und das maschinelle Übersetzungssystem geben sie oder die darin enthaltenen Informationen nicht an Dritte weiter.",
+            "G": "Das vom Nutzer zur Nutzung des maschinellen Übersetzungsservices MTee hochgeladene Dokument und seine Übersetzung werden für 20 Minuten im Dateisystem zwischengespeichert, damit das System das Dokument übersetzen kann und der Nutzer das übersetzte Dokument herunterladen kann. Nach 20 Minuten wird die Datei automatisch aus dem System gelöscht. Die Website des maschinellen Übersetzungsservices MTee und das maschinelle Übersetzungssystem MTee geben sie oder die darin enthaltenen Informationen nicht an Dritte weiter.",
+            "H": "Die Audiodatei, die der Nutzer für die Nutzung des maschinellen Übersetzungsservices MTee per Spracherkennung erstellt, wird für 20 Minuten im Dateisystem zwischengespeichert und danach automatisch aus dem System gelöscht. Die Website MTee und das Übersetzungssystem geben die Audiodatei oder die in der Audiodatei enthaltenen Informationen nicht an Dritte weiter."
+        },
+        "3": {
+            "TITLE": "Pflichten der für die Datenverarbeitung Verantwortlichen",
+            "A": "Das maschinelle Übersetzungssystem MTee wird 2022 auf dem HPC-Server (High Performance Computing) der Universität Tartu und anschließend auf einem vom IES verwalteten Server gehostet werden. Die Server werden sich auf dem Territorium der Europäischen Union befinden. Die Server und die Software für die maschinelle Übersetzung werden laufend mit aktuellen Sicherheitsupdates versorgt.",
+            "B": "Der maschinelle Übersetzungsservice MTee sammelt keine permanenten Daten, deshalb werden keine Backups erstellt oder gespeichert.",
+            "C": "Bei der maschinellen Übersetzung MTee handelt es sich um eine automatische Übersetzung, die nicht von einem Menschen überprüft oder bearbeitet wurde. Daher übernimmt IES keine Garantie für die Richtigkeit der Übersetzung und ist nicht für andere Aspekte im Zusammenhang mit der Qualität der Übersetzung verantwortlich.",
+            "D": "IES ist für die notwendige Entwicklung der MTee-Website, API und des maschinellen Übersetzungssystems zuständig.",
+            "E": "IES haftet nicht für Ausfälle der MTee-Website, API oder des maschinellen Übersetzungssystems, die durch Umstände außerhalb der Kontrolle von IES verursacht werden.",
+            "F": "IES haftet nicht für den Inhalt der vom Nutzer auf der Website und/oder in das maschinelle Übersetzungssystem eingegebenen Daten und Dokumente.",
+            "G": "Der Nutzer ist für jeden Text/jedes Dokument/jede Audiodatei verantwortlich, den/das/die er in das maschinelle Übersetzungssystem eingibt und der/das/die persönliche Daten oder vertrauliche Informationen enthält.",
+            "H": "Der Nutzer haftet für den ihm entstandenen materiellen oder immateriellen Schaden sowie für die Verletzung der Datenschutzbestimmungen und für jede Handlung, die das Funktionieren des Übersetzungsservices MTee beeinträchtigen kann."
+        },
+        "AGREEMENT_INFO": "Durch die Nutzung des maschinellen Übersetzungsservices MTee haben Sie die oben genannten Nutzungsbedingungen gelesen und sind sich bewusst, dass Ihre personenbezogenen Daten in der in den Nutzungsbedingungen beschriebenen Weise verarbeitet werden.",
+        "CONTACTS_LABEL": "Standort und Kontakte von IES:",
+        "INSTITUTE_NAME": "<b>Institut für estnische Sprache</b>",
+        "STREET": "Roosikrantsi 6",
+        "CITY": "10119 Tallinn, ESTLAND",
+        "EMAIL": "E-Mail: <a href=\"mailto:eki@eki.ee\">eki@eki.ee</a>"
+    },
+    "FOOTER": {},
+    "HEADER": {
+        "LABEL_SELECT_LANGUAGE": "Sprache auswählen",
+        "TITLE": "ÜBERSETZUNGSTOOL",
+        "ALT_LOGO": "Logo"
+    },
+    "PAGES": {
+        "ABOUT": "Über das Projekt",
+        "DATA_PROTECTION_CONDITIONS": "Datenschutzbedingungen"
+    },
+    "WEBTRANSLATE_DISCLAIMER": {
+        "DISCLAIMER": "Der Inhalt der Website wird in einem eingeschränkten Übersetzungssystem möglicherweise nicht geladen, nicht richtig angezeigt oder ist nicht voll funktionsfähig.",
+        "MORE": "Mehr erfahren...",
+        "DISCLAIMER2": "Die Übersetzung von Websites ist nicht perfekt, bitte haben Sie Geduld! Websites sind oft sehr kompliziert, was dazu führen kann, dass sie nicht so schnell reagieren. Infolgedessen können folgende Fehler auftreten: Inhalte, die nur teilweise geladen werden, Unmöglichkeit der Nutzung dynamischer Funktionen wie Authentifizierung, Navigation zu anderen Seiten oder die Website wird nicht geladen.",
+        "CLOSE_LABEL": "Schließen"
+    }
+}

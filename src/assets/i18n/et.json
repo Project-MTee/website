@@ -1,1 +1,94 @@
-{}
+{
+    "APP_NAME": "Tõlketööriist",
+    "ABOUT_PROJECT": {
+        "TITLE": "Projektist",
+        "TITLE_DESCRIPTION_1": "MTee on Eesti Keele Instituudi ning Haridus- ja Teadusministeeriumi algatatud seni suurim keeletehnoloogiline arendusprojekt, mille innovaatilisus seisneb uusimate võimaluste katsetamises masintõlketehnoloogia arendamisel. MTee kasutab tipptasemel närvivõrkudel põhinevat tehnoloogiat, arvestab tõlkimisel sõnastike ja terminikogudega ning võimaldab eestikeelse kõne tõlkimist.",
+        "TITLE_DESCRIPTION_2": "Hetkel saab MTee platvormil tõlkida kolmel keelesuunal: eesti-inglise-eesti, eesti-vene-eesti ning eesti-saksa-eesti. MTee on mõeldud töövahendiks nii avalikele asutustele, tõlkebüroodele, vabakutselistele tõlkijatele, kui ka tõlkeabivahendiks tavakasutajale.",
+        "1": {
+            "TITLE": "Valdkondlik masintõlge",
+            "1": "Erinevalt teistest enimkasutatavatest tõlkesüsteemidest, on MTee kohandatud tõlkima valdkonnapõhiselt, sest mida kitsama valdkonna materjalide peal masintõlkemudelit treenitakse, seda kõrgem on tõlkekvaliteet.",
+            "2": "MTee tunneb täna ära kolme valdkonna tekstid, milleks on rahvatervis (sh fookus kriisiinfol), õigus ja riigikaitse, kuid saab hakkama ka  teiste žanrite, nt uudiste, veebilehtede ja muude tekstide tõlkimisega. Lisaks tekstilõikude tõlkimisele, saab üles laadida ka tekstidokumente, mis tagastatakse tõlgitult samas vormingus nagu originaalfail."
+        },
+        "2": {
+            "TITLE": "Kõne tõlkimine ja veatuvastus",
+            "1": "MTee on esimene eesti keele masintõlge, mis võimaldab tõlkida reaalajas kõnet: salvesta eestikeelne jutt ning saa vastu selle üleskirjutus ja tõlge. Lisavahendina on masintõlkega liidestatud eesti keele grammatikakontrollija, mis tuvastab eestikeelses lähtetekstis võimalikke grammatilisi apsakaid."
+        },
+        "3": {
+            "TITLE": "Kuhu edasi?",
+            "1": "Järgnevate aastate jooksul lisatakse MTee juurde täiendavaid valdkondi ja keelesuundi ning suurendatakse kõnetuvastuse keelte arvu.",
+            "2": "Samuti on fookuses masintõlke kvaliteedi edasiarendamine. Kvaliteedi parenemisele saab kaasa aidata iga kasutaja. Masintõlkemudeleid treenitakse suurtel andmehulkadel, milles on kriitiline osa tõlkematerjalidel. Oma tõlketekste (koos lähtekeelse tekstiga) võib edastada meile igal ajahetkel ning garanteerime, et need saavad kasutatud tõlkekvaliteedi hüvanguks. Valdkondliku tõlke kvaliteet sõltub enim selle valdkonna tõlkematerjalidest."
+        },
+        "4": {
+            "TITLE": "Projektist",
+            "1": "MTee masintõlkeplatvorm on arendatud 2021. aastal Tartu Ülikooli arvutiteaduste instituudi ja Tilde koostööna. Projekti vastutav rahastaja on Eesti Keele Instituut ning algataja ja toetaja Haridus- ja Teadusministeerium.",
+            "2": "MTee on avatud lähtekoodiga ning tasuta kasutamiseks kõigile huvilistele. Rohkem infot meie lahenduse koodi ja API kohta leiab <a target=\"_blank\" href=\"https://github.com/Project-MTee\">siit</a>. Kõik juurdepääsupiiranguta materjalid, mida on MTee mudelite treenimiseks kasutatud, avaldatakse Teabeväravas.",
+            "3": "Soovime tänada kõiki asutusi, kes on meiega jaganud oma valdkonna tõlkematerjale ning aidanud seeläbi luua parima tõlkekvaliteediga eestikeelse masintõlke!"
+        },
+        "5": {
+            "TITLE": "Kontakt",
+            "1": "Kui sul on soov masintõlkelahenduse kohta rohkem teada saada, seda oma asutuses kasutama hakata või jagada oma valdkonna tõlkematerjale, võta ühendust Eesti Keele Instituudi keeletehnoloogia kompetentsikeskusega aadressil <a href=\"mailto:ktkk@eki.ee\">ktkk@eki.ee</a>."
+        }
+    },
+    "DATA_PROTECTION": {
+        "TITLE": "Andmekaitsetingimused",
+        "TITLE_DESCRIPTION_1": "MTee masintõlketeenus toetub avaliku sektori masintõlketehnoloogiale, mis on üldvaldkonna ja kohandatud spetsiifiliste valdkondade tekstide automaatseks tõlkimiseks.",
+        "TITLE_DESCRIPTION_2": "MTee masintõlketeenuse, kui masintõlkesüsteemi, omanik ja vastutav töötleja on Eesti Keele Instituut (edaspidi EKI).",
+        "TITLE_DESCRIPTION_3": "MTee masintõlketeenuse kasutajad on kõik füüsilised või juriidilised isikud, kes kasutavad MTee masintõlketeenuse veebilehte või kasutavad teenust üle rakendusliidese (edaspidi API).",
+        "1": {
+            "TITLE": "Üldtingimused",
+            "A": "MTee masintõlketeenuse kasutamiseks loetakse MTee masintõlketeenuse kaudu kättesaadavaks tehtud masintõlkesüsteemi ja selle funktsioonide kasutamist mistahes viisil või eesmärgil läbi API või teenuse veebilehe ning veebilehel kuvatava muu teabe kasutamist mistahes viisil või eesmärgil.",
+            "B": "MTee masintõlketeenuse veebilehe külastamine on lubatud vaid üldotstarbeliste veebilehitsejatega (Chrome, Internet Explorer, Mozilla Firefox, Mozilla, Opera, Safari).",
+            "C": "MTee masintõlketeenuse veebilehe külastamine eriotstarbeliste programmidega, mis tahes eesmärgil, on ilma EKI eelneva kirjaliku loata keelatud. Eriotstarbeline programm on programm, mis ei ole mõeldud üldotstarbeliseks interneti sirvimiseks või mille tööd ei kontrolli vahetult inimene. Eriotstarbelisteks programmideks loetakse muuhulgas üle API kasutamist, skripte, roboteid ja automatiseeritud tööriistu või programme, mis ei ole mõeldud interneti sirvimiseks.",
+            "D": "MTee masintõlketeenuse kasutamisel ei ole lubatud mistahes tegevused, mis häirivad või takistavad rakenduse kasutamist, sh peab kasutaja hoiduma arvutivõrgu ja serverite ülekoormamisest.",
+            "E": "Juhul, kui mõni kasutustingimuste säte on kehtetu vastuolu tõttu seadusega, siis ei mõjuta see ülejäänud kasutustingimuste sätete kehtivust.",
+            "F": "MTee masintõlkesüsteemi kood on avalik.",
+            "G": "MTee masintõlketeenuse kasutamine on kõigile kasutajatele tasuta.",
+            "H": "EKIl on igal ajal õigus tingimusi ühepoolselt muuta. Tingimused loetakse kasutaja suhtes muudetud kujul kehtivaks alates muudatuste teavitamisest veebilehel ning edaspidisel MTee masintõlketeenuse kasutamisel.",
+            "I": "EKIl on igal ajal omal äranägemisel õigus MTee masintõlketeenuse veebilehte, API-t ja masintõlkesüsteemi muuta ja arendada. Samuti on EKIl õigus teenuse pakkumine igal ajal lõpetada."
+        },
+        "2": {
+            "TITLE": "Andmete kasutamine ja kasutustingimustega nõustumine",
+            "A": "Kasutaja on teadlik veebilehel sisestatud andmete ning veebilehe kasutamisel tekkiva info töötlemisest ja ulatuses: andmete kasutamine on vastavuses Euroopa Liidu isikuandmete kaitse üldmääruse ja isikuandmete kaitse seaduse nõuetega.",
+            "B": "MTee masintõlketeenuse veebileht ja masintõlkesüsteem ei kogu ega säilita mistahes isikuandmeid, välja arvatud punktides f), g) ja h) nimetatud tõlkimisprotsessi ajaks.",
+            "C": "MTee masintõlketeenuse veebilehe külastamisel ei koguta isikustamata tehnilisi andmeid (kasutaja IP-aadress, geograafiline asukoht vmt).",
+            "D": "MTee masintõlketeenuse veebileht ei kasuta küpsiseid.",
+            "E": "Kasutaja poolt MTee masintõlketeenuse tekstikasti sisestatud teksti ja selle tõlget ei salvestata.",
+            "F": "Kasutaja poolt MTee masintõlketeenuse kasutamiseks üleslaaditud veebileht ja selle tõlge salvestatakse failisüsteemi ajutiselt 20 minutiks, et süsteem jõuaks veebilehe tõlkida. Pärast 20 minutit kustub salvestis süsteemist automaatselt. MTee masintõlketeenuse veebileht ja masintõlkesüsteem ei jaga neid ega neis sisalduvat informatsiooni kolmandate osapooltega.",
+            "G": "Kasutaja poolt MTee masintõlketeenuse kasutamiseks üleslaaditud dokument ja selle tõlge salvestatakse failisüsteemi ajutiselt 20 minutiks, et süsteem jõuaks dokumendi tõlkida ja kasutaja tõlgitud dokumendi alla laadida. Pärast 20 minutit kustub salvestis süsteemist automaatselt. MTee masintõlketeenuse veebileht ja masintõlkesüsteem ei jaga neid ega neis sisalduvat informatsiooni kolmandate osapooltega.",
+            "H": "Kasutaja poolt MTee masintõlketeenuse kasutamiseks kõnetuvastuse kaudu loodud helifail salvestatakse failisüsteemi ajutiselt 20 minutiks, pärast seda kustub salvestis süsteemist automaatselt. MTee masintõlketeenuse veebileht ja masintõlkesüsteem ei jaga salvestist ega salvestises sisalduvat informatsiooni kolmandate osapooltega."
+        },
+        "3": {
+            "TITLE": "Andmetöötluses osalejate vastutus",
+            "A": "MTee masintõlkesüsteem on majutatud 2022. aastal Tartu Ülikooli HPC (high performance computing) serveris, seejärel EKI poolt hallatavas serveris. Serverid asuvad Euroopa Liidu territooriumil. Servereid ja masintõlketarkvara hooldatakse jooksvalt ajakohaste turvavärskendustega.",
+            "B": "MTee masintõlketeenus ei kogu püsiandmeid, mistõttu ei tehta ega hoiustata varukoopiaid.",
+            "C": "MTee masintõlge on automaatne tõlge, mis ei ole inimese poolt läbi vaadatud ega toimetatud ning seetõttu EKI ei garanteeri tõlke õigsust ega vastuta teiste tõlke kvaliteediga seotud aspektide eest.",
+            "D": "EKI vastutab MTee veebilehe, API ja masintõlkesüsteemi vajalike arendustööde korraldamise eest.",
+            "E": "EKI ei vastuta MTee veebilehe, API ega masintõlkesüsteemi tõrgete eest, mis on põhjustatud EKI kontrolli alt väljas olevatest asjaoludest.",
+            "F": "EKI ei vastuta kasutaja poolt veebilehele ja/või masintõlkesüsteemi sisestatud andmete ja dokumentide sisu eest.",
+            "G": "Kasutaja vastutab ise enda poolt masintõlkesüsteemi sisestatud teksti/dokumendi/kõne eest, mis sisaldab isikuandmeid või mistahes konfidentsiaalset informatsiooni.",
+            "H": "Kasutaja vastutab ise endale tekitatud varalise või mittevaralise kahju eest ning andmekaitse nõuete rikkumise ja MTee masintõlketeenuse toimimist kahjustava tegevuse eest."
+        },
+        "AGREEMENT_INFO": "Kasutades MTee masintõlketeenust, oled tutvunud ülaltoodud kasutustingimustega ja teadlik enda isikuandmete töötlemisest kasutustingimustes sätestatud viisil.",
+        "CONTACTS_LABEL": "EKI asukoht ja kontaktid:",
+        "INSTITUTE_NAME": "<b>Eesti Keele Instituut</b>",
+        "STREET": "Roosikrantsi 6",
+        "CITY": "10119 Tallinn, EESTI",
+        "EMAIL": "E-post: <a href=\"mailto:eki@eki.ee\">eki@eki.ee</a>"
+    },
+    "FOOTER": {},
+    "HEADER": {
+        "LABEL_SELECT_LANGUAGE": "Valige keel",
+        "TITLE": "TÕLKETÖÖRIIST",
+        "ALT_LOGO": "Logo"
+    },
+    "PAGES": {
+        "ABOUT": "Projektist",
+        "DATA_PROTECTION_CONDITIONS": "Andmekaitsetingimused"
+    },
+    "WEBTRANSLATE_DISCLAIMER": {
+        "DISCLAIMER": "Veebisaidi sisu ei pruugi piiratud tõlkekeskkonnas laadida, korralikult kuvada ega täielikult toimida.",
+        "MORE": "Loe edasi...",
+        "DISCLAIMER2": "Veebilehe tõlge ei ole täiuslik, palun varuge kannatust! Veebilehtede tõlkimine on keerukas protsess ning seetõttu võib lehekülje dünaamilisus väheneda. Selle tulemusena võivad ilmneda järgmised vead: sisu laadib ainult osaliselt, dünaamiliste funktsioonide (nagu autentimine, navigeerimine teistele lehtedele) kasutamine pole võimalik või veebileht ei pruugi laadida.",
+        "CLOSE_LABEL": "Sulge"
+    }
+}
