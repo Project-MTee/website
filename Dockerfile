@@ -28,7 +28,7 @@ RUN chmod +x entrypoint.sh
 RUN cp entrypoint.sh dist/website-mtee/
 
 # stage 3 - publish app
-FROM nginx:alpine
+FROM nginx:1-alpine
 
 COPY --from=release /app/dist/website-mtee /usr/share/nginx/html
 COPY nginx.default.conf /etc/nginx/conf.d/default.conf
