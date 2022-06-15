@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { ConfigService } from 'src/app/shared/services/config.service';
 
 @Component({
   selector: 'tld-web-embedded',
@@ -8,16 +9,28 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./web-embedded.component.scss']
 })
 export class WebEmbeddedComponent implements OnInit, AfterViewInit {
-
+  
+  clientId: string;
+  appId: string;
+  sandbox: string;
+  filterSystemsByAppId: boolean;
+  translationServiceUrl: string;
+  translatePagePath: string;  //  path to WebTranslationProxy
+  allowSuggestions = false;
+  hidePopup = false;
+  
   constructor(
     private activatedRoute: ActivatedRoute,
-    private readonly translate: TranslateService) {
+    private readonly translate: TranslateService,
+    private readonly config: ConfigService) {
     this.activatedRoute.queryParams.subscribe(params => {
       this.clientId = params.clientId;
       this.appId = params.appId;
       this.filterSystemsByAppId = params.filterSystemsByAppId;
       this.translationServiceUrl = params.translationServiceUrl;
       this.translatePagePath = params.framePath;
+      this.sandbox = this.config.appConfig.web.sandbox;
+
       if (params.allowSuggestions) {
         this.allowSuggestions = params.allowSuggestions;
       }
@@ -26,14 +39,6 @@ export class WebEmbeddedComponent implements OnInit, AfterViewInit {
       }
     });
   }
-
-  clientId: string;
-  appId: string;
-  filterSystemsByAppId: boolean;
-  translationServiceUrl: string;
-  translatePagePath: string;  //  path to WebTranslationProxy
-  allowSuggestions = false;
-  hidePopup = false;
 
   ngOnInit(): void {
     this.addScript('./assets/webtranslate/default-font-size.js');
