@@ -27,7 +27,7 @@
     "debug": false,
     "logoLocation": "assets/logo.svg",
     "hidePopup": true,
-    "sanbox": "allow-forms allow-scripts allow-same-origin"
+    "sandbox": "allow-forms allow-scripts allow-same-origin"
   },
   "audio":{
     "audioApiUrl": "https://mt.cs.ut.ee/api/speech-to-text",
