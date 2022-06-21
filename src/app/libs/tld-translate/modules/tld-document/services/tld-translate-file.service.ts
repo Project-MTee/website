@@ -207,7 +207,6 @@ export class TldTranslateFileService {
           }
           else if (translationFile.translationStatuss === finishedStatus) {
             this.translatedCount += 1;
-            translationFile.name = response.name;
             translationFile.downloadAvailable = true;
 
             this.translatedDocPreview(translationFile);
