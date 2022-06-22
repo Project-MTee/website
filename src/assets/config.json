@@ -26,7 +26,8 @@
     "websiteTranslationUrl": "/webtranslate/embedded?embeddedStyle=noUI",
     "debug": false,
     "logoLocation": "assets/logo.svg",
-    "hidePopup": true
+    "hidePopup": true,
+    "sandbox": "allow-forms allow-scripts allow-same-origin"
   },
   "audio":{
     "audioApiUrl": "https://mt.cs.ut.ee/api/speech-to-text",

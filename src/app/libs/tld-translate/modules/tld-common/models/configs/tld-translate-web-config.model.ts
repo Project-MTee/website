@@ -6,4 +6,5 @@ export interface ITldTranslateWebsiteConfig {
   webLangAutodetect?: boolean; // after page is loaded auto detect language and change active system
   allowSuggestions?: boolean;
   hidePopup?: boolean;
+  sandbox?: string;
 }
