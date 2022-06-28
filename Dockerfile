@@ -21,6 +21,7 @@ RUN npm run build --prod
 
 RUN jq '\
   .core.clientId="$PUBLIC_CLIENT_ID" |\
+  .apiV2Urls.grammarCheckUrl="$GRAMMAR_CHECK_URL" |\
   .web.sandbox="$SANDBOX" '\
   dist/website-mtee/assets/config.json > dist/website-mtee/assets/config.json.tmp
 RUN mv dist/website-mtee/assets/config.json.tmp dist/website-mtee/assets/config.json

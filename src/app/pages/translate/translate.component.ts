@@ -17,6 +17,7 @@ export class TranslateComponent implements OnInit {
     this.config.text = this.configService.appConfig.text;
     this.config.file = this.configService.appConfig.file;
     this.config.audio = this.configService.appConfig.audio;
+    this.config.apiV2Urls = this.configService.appConfig.apiV2Urls;
   }
 
 }
