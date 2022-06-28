@@ -76,7 +76,7 @@ export class FileApiV2Service {
         const extensions: IFileMeta[] = [];
         response.files.forEach((file) => {
           if (file.category.toUpperCase() === FileV2Category.TRANSLATED) {
-            const fileName = `${this.uploadedFile.name.slice(0, this.uploadedFile.name.lastIndexOf("."))}.${file.extension}`;
+            const fileName = `${this.uploadedFile.name.slice(0, this.uploadedFile.name.lastIndexOf("."))}${file.extension}`;
             extensions.push({ extension: file.extension, fileName: fileName, id: file.id });
           }
         })

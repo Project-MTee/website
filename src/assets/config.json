@@ -30,7 +30,7 @@
     "sandbox": "allow-forms allow-scripts allow-same-origin"
   },
   "audio":{
-    "audioApiUrl": "https://mt.cs.ut.ee/api/speech-to-text",
+    "audioApiUrl": "api/speech-to-text",
     "audioTextInput": true,
     "sourceLanguages": ["et"]
   }
